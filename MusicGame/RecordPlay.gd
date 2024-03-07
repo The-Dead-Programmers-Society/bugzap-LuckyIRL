@@ -8,8 +8,8 @@ var chime_player = null
 var recorded_audio_player = null
 var recording_player = null
 
-@onready var record_button = $"."
-@onready var play_button = $"../PlayButton"
+@onready var record_button = $"." as Button
+@onready var play_button = $"../PlayButton" as Button
 
 func _ready():
 	record_button.button_down.connect(start_recording)
@@ -20,7 +20,7 @@ func _ready():
 func start_recording():
 	# Start recording audio using the RecordingPlayer
 	recording = true
-	recording_player.connect("finished", self, "_on_recording_player_finished")
+	recording_player.connect("finished", self, "_on_recording_finished")
 
 
 

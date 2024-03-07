@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://c4mmqfjtrev34"]
 
-[ext_resource type="Script" path="res://Control.gd" id="1_7xoke"]
+[ext_resource type="Script" path="res://Control.gd" id="1_2tudh"]
 
 [node name="MIDI_Controller" type="Control"]
 layout_mode = 3
@@ -13,7 +13,7 @@ offset_right = 2.0
 offset_bottom = -1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_7xoke")
+script = ExtResource("1_2tudh")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
@@ -47,3 +47,7 @@ layout_mode = 2
 [node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer"]
 layout_mode = 2
 theme_override_constants/separation = -175
+
+[connection signal="ready" from="MarginContainer/HBoxContainer/PitchSlider" to="." method="_on_pitch_slider_ready"]
+[connection signal="ready" from="MarginContainer/HBoxContainer/TempoSlider" to="." method="_on_tempo_slider_ready"]
+[connection signal="ready" from="MarginContainer/HBoxContainer/VSlider4" to="." method="_on_v_slider_4_ready"]

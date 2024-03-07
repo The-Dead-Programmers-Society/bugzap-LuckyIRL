@@ -18,7 +18,7 @@
 [ext_resource type="AudioStream" uid="uid://yhwnugn5pnxg" path="res://audio/Bell16.wav" id="16_m2q0t"]
 [ext_resource type="Texture2D" uid="uid://oa6wa2qppnvo" path="res://Sprites/b.png" id="17_ar5ln"]
 [ext_resource type="Script" path="res://RecordPlay.gd" id="18_10bq5"]
-[ext_resource type="PackedScene" uid="uid://c4mmqfjtrev34" path="res://MainMenu/MIDI_Controller.tscn" id="19_d1pl2"]
+[ext_resource type="PackedScene" uid="uid://c4mmqfjtrev34" path="res://MainMenu/midi_Controller.tscn" id="19_3syp6"]
 
 [sub_resource type="AudioStream" id="AudioStream_kmyeg"]
 
@@ -194,11 +194,7 @@ volume_db = 0.803
 
 [node name="RecordingPlayer" type="AudioStreamPlayer" parent="."]
 
-[node name="MIDI_Controller" parent="." instance=ExtResource("19_d1pl2")]
-offset_left = 490.0
-offset_top = 630.0
-offset_right = 490.0
-offset_bottom = 630.0
+[node name="MIDI_Controller" parent="." instance=ExtResource("19_3syp6")]
 
 [connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/Button" to="CanvasLayer/Button" method="_on_pressed"]
