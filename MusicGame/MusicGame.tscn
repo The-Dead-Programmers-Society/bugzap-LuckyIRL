@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://c4yox7amyk4xm"]
+[gd_scene load_steps=20 format=3 uid="uid://c4yox7amyk4xm"]
 
 [ext_resource type="Script" path="res://Button.gd" id="1_8jkes"]
 [ext_resource type="AudioStream" uid="uid://dmxxmopmcjol4" path="res://audio/Bell1.wav" id="2_7rsjc"]
@@ -17,6 +17,9 @@
 [ext_resource type="AudioStream" uid="uid://bc0rpdo36l6yl" path="res://audio/Bell15.wav" id="15_cl0ra"]
 [ext_resource type="AudioStream" uid="uid://yhwnugn5pnxg" path="res://audio/Bell16.wav" id="16_m2q0t"]
 [ext_resource type="Texture2D" uid="uid://oa6wa2qppnvo" path="res://Sprites/b.png" id="17_ar5ln"]
+[ext_resource type="Script" path="res://RecordPlay.gd" id="18_10bq5"]
+
+[sub_resource type="AudioStream" id="AudioStream_kmyeg"]
 
 [node name="Node2D" type="Node2D"]
 
@@ -161,7 +164,34 @@ text = "Play 15"
 script = ExtResource("1_8jkes")
 stream = ExtResource("16_m2q0t")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="RecordButton" type="Button" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_right = 0.007
+offset_left = 379.0
+offset_top = 568.0
+offset_right = 450.936
+offset_bottom = 634.0
+text = "Record
+"
+script = ExtResource("18_10bq5")
+
+[node name="PlayButton" type="Button" parent="CanvasLayer"]
+anchors_preset = -1
+anchor_right = 0.007
+offset_left = 676.0
+offset_top = 568.0
+offset_right = 747.936
+offset_bottom = 634.0
+text = "Play"
+script = ExtResource("18_10bq5")
+
+[node name="ChimePlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="RecordedAudioPlayer" type="AudioStreamPlayer" parent="."]
+stream = SubResource("AudioStream_kmyeg")
+volume_db = 0.803
+
+[node name="RecordingPlayer" type="AudioStreamPlayer" parent="."]
 
 [connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/Button" to="CanvasLayer/Button" method="_on_pressed"]
@@ -179,3 +209,11 @@ stream = ExtResource("16_m2q0t")
 [connection signal="pressed" from="CanvasLayer/Button13" to="CanvasLayer/Button13" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/Button14" to="CanvasLayer/Button14" method="_on_pressed"]
 [connection signal="pressed" from="CanvasLayer/Button15" to="CanvasLayer/Button15" method="_on_pressed"]
+[connection signal="button_down" from="CanvasLayer/RecordButton" to="CanvasLayer/RecordButton" method="_on_button_down"]
+[connection signal="button_down" from="CanvasLayer/PlayButton" to="CanvasLayer/PlayButton" method="_on_button_down"]
+[connection signal="finished" from="ChimePlayer" to="CanvasLayer/RecordButton" method="_on_chime_player_finished"]
+[connection signal="finished" from="ChimePlayer" to="CanvasLayer/PlayButton" method="_on_chime_player_finished"]
+[connection signal="finished" from="RecordedAudioPlayer" to="CanvasLayer/RecordButton" method="_on_recorded_audio_player_finished"]
+[connection signal="finished" from="RecordedAudioPlayer" to="CanvasLayer/PlayButton" method="_on_recorded_audio_player_finished"]
+[connection signal="finished" from="RecordingPlayer" to="CanvasLayer/RecordButton" method="_on_recording_player_finished"]
+[connection signal="finished" from="RecordingPlayer" to="CanvasLayer/PlayButton" method="_on_recording_player_finished"]
