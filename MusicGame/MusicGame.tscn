@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://c4yox7amyk4xm"]
+[gd_scene load_steps=21 format=3 uid="uid://c4yox7amyk4xm"]
 
 [ext_resource type="Script" path="res://Button.gd" id="1_8jkes"]
 [ext_resource type="AudioStream" uid="uid://dmxxmopmcjol4" path="res://audio/Bell1.wav" id="2_7rsjc"]
@@ -18,6 +18,7 @@
 [ext_resource type="AudioStream" uid="uid://yhwnugn5pnxg" path="res://audio/Bell16.wav" id="16_m2q0t"]
 [ext_resource type="Texture2D" uid="uid://oa6wa2qppnvo" path="res://Sprites/b.png" id="17_ar5ln"]
 [ext_resource type="Script" path="res://RecordPlay.gd" id="18_10bq5"]
+[ext_resource type="PackedScene" uid="uid://c4mmqfjtrev34" path="res://MainMenu/MIDI_Controller.tscn" id="19_d1pl2"]
 
 [sub_resource type="AudioStream" id="AudioStream_kmyeg"]
 
@@ -167,10 +168,10 @@ stream = ExtResource("16_m2q0t")
 [node name="RecordButton" type="Button" parent="CanvasLayer"]
 anchors_preset = -1
 anchor_right = 0.007
-offset_left = 379.0
-offset_top = 568.0
-offset_right = 450.936
-offset_bottom = 634.0
+offset_left = 781.0
+offset_top = 569.0
+offset_right = 852.936
+offset_bottom = 635.0
 text = "Record
 "
 script = ExtResource("18_10bq5")
@@ -178,10 +179,10 @@ script = ExtResource("18_10bq5")
 [node name="PlayButton" type="Button" parent="CanvasLayer"]
 anchors_preset = -1
 anchor_right = 0.007
-offset_left = 676.0
-offset_top = 568.0
-offset_right = 747.936
-offset_bottom = 634.0
+offset_left = 896.0
+offset_top = 567.0
+offset_right = 967.936
+offset_bottom = 633.0
 text = "Play"
 script = ExtResource("18_10bq5")
 
@@ -192,6 +193,12 @@ stream = SubResource("AudioStream_kmyeg")
 volume_db = 0.803
 
 [node name="RecordingPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="MIDI_Controller" parent="." instance=ExtResource("19_d1pl2")]
+offset_left = 490.0
+offset_top = 630.0
+offset_right = 490.0
+offset_bottom = 630.0
 
 [connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/Button" to="CanvasLayer/Button" method="_on_pressed"]
