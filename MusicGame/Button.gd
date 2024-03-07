@@ -7,4 +7,5 @@ func _on_pressed():
 
 
 func _on_button_2_pressed():
+	$Sprite2D.duplicate()
 	pass # Replace with function body.

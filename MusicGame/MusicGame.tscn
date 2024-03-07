@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://c4yox7amyk4xm"]
+[gd_scene load_steps=18 format=3 uid="uid://c4yox7amyk4xm"]
 
 [ext_resource type="Script" path="res://Button.gd" id="1_8jkes"]
 [ext_resource type="AudioStream" uid="uid://dmxxmopmcjol4" path="res://audio/Bell1.wav" id="2_7rsjc"]
@@ -16,19 +16,24 @@
 [ext_resource type="AudioStream" uid="uid://c0tarmw7oiff" path="res://audio/Bell14.wav" id="14_4810w"]
 [ext_resource type="AudioStream" uid="uid://bc0rpdo36l6yl" path="res://audio/Bell15.wav" id="15_cl0ra"]
 [ext_resource type="AudioStream" uid="uid://yhwnugn5pnxg" path="res://audio/Bell16.wav" id="16_m2q0t"]
+[ext_resource type="Texture2D" uid="uid://oa6wa2qppnvo" path="res://Sprites/b.png" id="17_ar5ln"]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="Button" type="Button" parent="CanvasLayer"]
-offset_left = 89.0
-offset_top = 33.0
-offset_right = 238.0
-offset_bottom = 185.0
+offset_left = 98.0
+offset_top = 30.0
+offset_right = 247.0
+offset_bottom = 182.0
 text = "Play 1"
 script = ExtResource("1_8jkes")
 stream = ExtResource("2_7rsjc")
+
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Button"]
+position = Vector2(77, 76)
+texture = ExtResource("17_ar5ln")
 
 [node name="Button2" type="Button" parent="CanvasLayer"]
 offset_left = 268.0
@@ -130,28 +135,28 @@ script = ExtResource("1_8jkes")
 stream = ExtResource("13_ula4t")
 
 [node name="Button13" type="Button" parent="CanvasLayer"]
-offset_left = 481.0
-offset_top = 408.0
-offset_right = 640.0
-offset_bottom = 558.0
+offset_left = 476.0
+offset_top = 407.0
+offset_right = 635.0
+offset_bottom = 557.0
 text = "Play 13"
 script = ExtResource("1_8jkes")
 stream = ExtResource("14_4810w")
 
 [node name="Button14" type="Button" parent="CanvasLayer"]
-offset_left = 676.0
-offset_top = 400.0
-offset_right = 835.0
-offset_bottom = 550.0
+offset_left = 679.0
+offset_top = 406.0
+offset_right = 838.0
+offset_bottom = 556.0
 text = "Play 14"
 script = ExtResource("1_8jkes")
 stream = ExtResource("15_cl0ra")
 
 [node name="Button15" type="Button" parent="CanvasLayer"]
-offset_left = 878.0
-offset_top = 401.0
-offset_right = 1037.0
-offset_bottom = 551.0
+offset_left = 873.0
+offset_top = 399.0
+offset_right = 1032.0
+offset_bottom = 549.0
 text = "Play 15"
 script = ExtResource("1_8jkes")
 stream = ExtResource("16_m2q0t")
