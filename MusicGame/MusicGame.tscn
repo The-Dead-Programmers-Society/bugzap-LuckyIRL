@@ -32,7 +32,7 @@ script = ExtResource("1_8jkes")
 stream = ExtResource("2_7rsjc")
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Button"]
-position = Vector2(77, 76)
+position = Vector2(71, 70)
 texture = ExtResource("17_ar5ln")
 
 [node name="Button2" type="Button" parent="CanvasLayer"]
