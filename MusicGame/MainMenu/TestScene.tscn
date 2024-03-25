@@ -1,6 +1,16 @@
-[gd_scene load_steps=2 format=3 uid="uid://k5ymjlmc0akl"]
+[gd_scene load_steps=12 format=3 uid="uid://k5ymjlmc0akl"]
 
 [ext_resource type="Texture2D" uid="uid://bej7cqif4xqwx" path="res://Sprites/The Bells.png" id="1_eoxib"]
+[ext_resource type="Script" path="res://MainMenu/TestScene.gd" id="1_ljpw3"]
+[ext_resource type="AudioStream" uid="uid://dmxxmopmcjol4" path="res://audio/Bell1.wav" id="3_0g3yl"]
+[ext_resource type="AudioStream" uid="uid://blhub386srghi" path="res://audio/Bell2.wav" id="4_3fx12"]
+[ext_resource type="AudioStream" uid="uid://dn8n66wg07hky" path="res://audio/Bell3.wav" id="5_dhbd2"]
+[ext_resource type="AudioStream" uid="uid://8i6ni2nhcox0" path="res://audio/Bell4.wav" id="6_gefhv"]
+[ext_resource type="AudioStream" uid="uid://dw4rjjsbi84h" path="res://audio/Bell5.wav" id="7_f3c8t"]
+[ext_resource type="AudioStream" uid="uid://bgpyn74kp8re" path="res://audio/Bell6.wav" id="8_rocsu"]
+[ext_resource type="AudioStream" uid="uid://bm6tue5db307k" path="res://audio/Bell7.wav" id="9_ik7yv"]
+[ext_resource type="AudioStream" uid="uid://blmskn7grjwy7" path="res://audio/Bell8.wav" id="10_ux07x"]
+[ext_resource type="AudioStream" uid="uid://cqn2i13rraumd" path="res://audio/Bell10.wav" id="11_lleue"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -9,6 +19,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_ljpw3")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
@@ -20,72 +31,120 @@ grow_vertical = 2
 texture = ExtResource("1_eoxib")
 expand_mode = 1
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_left = 50
-theme_override_constants/margin_top = 50
-theme_override_constants/margin_right = 50
-theme_override_constants/margin_bottom = 50
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_0g3yl")
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
-layout_mode = 2
-size_flags_horizontal = 4
-size_flags_stretch_ratio = 0.59
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_3fx12")
 
-[node name="Button" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_dhbd2")
+
+[node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_gefhv")
+
+[node name="AudioStreamPlayer5" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_f3c8t")
+
+[node name="AudioStreamPlayer6" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_rocsu")
+
+[node name="AudioStreamPlayer7" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_ik7yv")
+
+[node name="AudioStreamPlayer8" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_ux07x")
+
+[node name="AudioStreamPlayer9" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("11_lleue")
+
+[node name="Button1" type="Button" parent="."]
 layout_mode = 2
+offset_left = 537.0
+offset_top = 50.0
+offset_right = 615.0
+offset_bottom = 81.0
 text = "Press Me
 "
 
-[node name="Button2" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="Button2" type="Button" parent="."]
 layout_mode = 2
+offset_left = 537.0
+offset_top = 85.0
+offset_right = 615.0
+offset_bottom = 116.0
 text = "Press Me
 "
 
-[node name="Button3" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="Button3" type="Button" parent="."]
 layout_mode = 2
+offset_left = 537.0
+offset_top = 120.0
+offset_right = 615.0
+offset_bottom = 151.0
 text = "Press Me
 "
 
-[node name="Button4" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="Button4" type="Button" parent="."]
 layout_mode = 2
+offset_left = 537.0
+offset_top = 155.0
+offset_right = 615.0
+offset_bottom = 186.0
 text = "Press Me
 "
 
-[node name="Button5" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="Button5" type="Button" parent="."]
 layout_mode = 2
+offset_left = 537.0
+offset_top = 190.0
+offset_right = 615.0
+offset_bottom = 221.0
 text = "Press Me
 "
 
-[node name="Button6" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="Button6" type="Button" parent="."]
 layout_mode = 2
+offset_left = 537.0
+offset_top = 225.0
+offset_right = 615.0
+offset_bottom = 256.0
 text = "Press Me
 "
 
-[node name="Button7" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="Button7" type="Button" parent="."]
 layout_mode = 2
+offset_left = 537.0
+offset_top = 260.0
+offset_right = 615.0
+offset_bottom = 291.0
 text = "Press Me
 "
 
-[node name="Button8" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="Button8" type="Button" parent="."]
 layout_mode = 2
+offset_left = 537.0
+offset_top = 295.0
+offset_right = 615.0
+offset_bottom = 326.0
 text = "Press Me
 "
 
-[node name="Button9" type="Button" parent="MarginContainer/VBoxContainer"]
+[node name="Button9" type="Button" parent="."]
 layout_mode = 2
+offset_left = 537.0
+offset_top = 330.0
+offset_right = 615.0
+offset_bottom = 361.0
 text = "Press Me
 "
 
-[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer"]
-layout_mode = 2
-size_flags_stretch_ratio = 0.59
-
-[node name="VBoxContainer3" type="VBoxContainer" parent="MarginContainer"]
-layout_mode = 2
-size_flags_stretch_ratio = 0.59
+[connection signal="pressed" from="Button1" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
+[connection signal="pressed" from="Button5" to="." method="_on_button_5_pressed"]
+[connection signal="pressed" from="Button6" to="." method="_on_button_6_pressed"]
+[connection signal="pressed" from="Button7" to="." method="_on_button_7_pressed"]
+[connection signal="pressed" from="Button8" to="." method="_on_button_8_pressed"]
+[connection signal="pressed" from="Button9" to="." method="_on_button_9_pressed"]
