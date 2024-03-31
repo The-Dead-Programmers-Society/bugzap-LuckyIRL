@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://k5ymjlmc0akl"]
+[gd_scene load_steps=14 format=3 uid="uid://k5ymjlmc0akl"]
 
 [ext_resource type="Texture2D" uid="uid://bej7cqif4xqwx" path="res://Sprites/The Bells.png" id="1_eoxib"]
 [ext_resource type="Script" path="res://MainMenu/TestScene.gd" id="1_ljpw3"]
@@ -11,6 +11,8 @@
 [ext_resource type="AudioStream" uid="uid://bm6tue5db307k" path="res://audio/Bell7.wav" id="9_ik7yv"]
 [ext_resource type="AudioStream" uid="uid://blmskn7grjwy7" path="res://audio/Bell8.wav" id="10_ux07x"]
 [ext_resource type="AudioStream" uid="uid://cqn2i13rraumd" path="res://audio/Bell10.wav" id="11_lleue"]
+[ext_resource type="Script" path="res://MainMenu/PlayBackControl.gd" id="12_5onk2"]
+[ext_resource type="Script" path="res://MainMenu/AudioStreamPlayer.gd" id="13_yor8n"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -139,7 +141,13 @@ offset_bottom = 361.0
 text = "Press Me
 "
 
-[node name="RecordButton" type="Button" parent="."]
+[node name="PlayBackControl" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("12_5onk2")
+
+[node name="RecordButton" type="Button" parent="PlayBackControl"]
 layout_mode = 0
 offset_left = 330.0
 offset_top = 451.0
@@ -147,13 +155,18 @@ offset_right = 402.0
 offset_bottom = 503.0
 text = "Record"
 
-[node name="PlayButton" type="Button" parent="."]
+[node name="PlayButton" type="Button" parent="PlayBackControl"]
 layout_mode = 0
 offset_left = 738.0
 offset_top = 444.0
 offset_right = 809.0
 offset_bottom = 496.0
 text = "Play"
+
+[node name="PlayBackPlayer" type="AudioStreamPlayer" parent="PlayBackControl"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+script = ExtResource("13_yor8n")
 
 [connection signal="pressed" from="Button1" to="." method="_on_button_1_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
@@ -164,3 +177,5 @@ text = "Play"
 [connection signal="pressed" from="Button7" to="." method="_on_button_7_pressed"]
 [connection signal="pressed" from="Button8" to="." method="_on_button_8_pressed"]
 [connection signal="pressed" from="Button9" to="." method="_on_button_9_pressed"]
+[connection signal="pressed" from="PlayBackControl/RecordButton" to="PlayBackControl" method="_on_record_button_pressed"]
+[connection signal="pressed" from="PlayBackControl/PlayButton" to="PlayBackControl" method="_on_play_button_pressed"]
