@@ -1,20 +1,23 @@
 extends Control
 
-func _ready():
-	# Connect the pressed signal of each button to a method in this script
-	$Button1.connect("pressed", self, "_on_button_pressed")
-	$Button2.connect("pressed", self, "_on_button_pressed")
-	# Connect more buttons similarly
+# Array to store recorded audio data
+var recorded_bell_sounds: Array = []
 
-func _on_button_pressed() -> void:
-	# Get the pressed button's number from its name
-	var button_number_str: String = $Button1.name.get_suffix()
-	var button_number: int = button_number_str.to_int()
-
-	# Find the corresponding AudioStreamPlayer by name
-	var audio_stream_player: AudioStreamPlayer = get_node("AudioStreamPlayer" + str(button_number))
-
-	# Check if the AudioStreamPlayer exists
-	if audio_stream_player != null:
-		# Play the bell sound
-		audio_stream_player.play()
+func _on_button_1_pressed():
+	$AudioStreamPlayer1.play()
+func _on_button_2_pressed():
+	$AudioStreamPlayer2.play()	
+func _on_button_3_pressed():
+	$AudioStreamPlayer3.play()
+func _on_button_4_pressed():
+	$AudioStreamPlayer4.play()
+func _on_button_5_pressed():
+	$AudioStreamPlayer5.play()
+func _on_button_6_pressed():
+	$AudioStreamPlayer6.play()
+func _on_button_7_pressed():
+	$AudioStreamPlayer7.play()
+func _on_button_8_pressed():
+	$AudioStreamPlayer8.play()
+func _on_button_9_pressed():
+	$AudioStreamPlayer9.play()

@@ -31,7 +31,7 @@ grow_vertical = 2
 texture = ExtResource("1_eoxib")
 expand_mode = 1
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="AudioStreamPlayer1" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_0g3yl")
 
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
@@ -139,7 +139,23 @@ offset_bottom = 361.0
 text = "Press Me
 "
 
-[connection signal="pressed" from="Button1" to="." method="_on_button_pressed"]
+[node name="RecordButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 330.0
+offset_top = 451.0
+offset_right = 402.0
+offset_bottom = 503.0
+text = "Record"
+
+[node name="PlayButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 738.0
+offset_top = 444.0
+offset_right = 809.0
+offset_bottom = 496.0
+text = "Play"
+
+[connection signal="pressed" from="Button1" to="." method="_on_button_1_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
 [connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
 [connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
