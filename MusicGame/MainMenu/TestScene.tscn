@@ -12,7 +12,7 @@
 [ext_resource type="AudioStream" uid="uid://blmskn7grjwy7" path="res://audio/Bell8.wav" id="10_ux07x"]
 [ext_resource type="AudioStream" uid="uid://cqn2i13rraumd" path="res://audio/Bell10.wav" id="11_lleue"]
 [ext_resource type="Script" path="res://MainMenu/PlayBackControl.gd" id="12_5onk2"]
-[ext_resource type="Script" path="res://MainMenu/AudioStreamPlayer.gd" id="13_yor8n"]
+[ext_resource type="Script" path="res://MainMenu/Synth Control.gd" id="13_v75r3"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -165,8 +165,48 @@ text = "Play"
 
 [node name="PlayBackPlayer" type="AudioStreamPlayer" parent="PlayBackControl"]
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-script = ExtResource("13_yor8n")
+[node name="UI Control" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Button" type="Button" parent="UI Control"]
+layout_mode = 0
+offset_left = 63.0
+offset_top = 318.0
+offset_right = 128.0
+offset_bottom = 382.0
+text = "Synth
+"
+
+[node name="Frequency" type="VSlider" parent="UI Control"]
+layout_mode = 0
+offset_left = 171.0
+offset_top = 252.0
+offset_right = 187.0
+offset_bottom = 388.0
+
+[node name="Amplitude" type="VSlider" parent="UI Control"]
+layout_mode = 0
+offset_left = 230.0
+offset_top = 254.0
+offset_right = 246.0
+offset_bottom = 390.0
+
+[node name="Duration" type="VSlider" parent="UI Control"]
+layout_mode = 0
+offset_left = 290.0
+offset_top = 254.0
+offset_right = 306.0
+offset_bottom = 390.0
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="UI Control"]
+
+[node name="Synth Control" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("13_v75r3")
 
 [connection signal="pressed" from="Button1" to="." method="_on_button_1_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
@@ -179,3 +219,5 @@ script = ExtResource("13_yor8n")
 [connection signal="pressed" from="Button9" to="." method="_on_button_9_pressed"]
 [connection signal="pressed" from="PlayBackControl/RecordButton" to="PlayBackControl" method="_on_record_button_pressed"]
 [connection signal="pressed" from="PlayBackControl/PlayButton" to="PlayBackControl" method="_on_play_button_pressed"]
+[connection signal="pressed" from="UI Control/Button" to="Synth Control" method="_on_button_pressed"]
+[connection signal="value_changed" from="UI Control/Frequency" to="Synth Control" method="_on_frequency_value_changed"]
