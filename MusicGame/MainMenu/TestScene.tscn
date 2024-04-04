@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://k5ymjlmc0akl"]
+[gd_scene load_steps=15 format=3 uid="uid://k5ymjlmc0akl"]
 
 [ext_resource type="Texture2D" uid="uid://bej7cqif4xqwx" path="res://Sprites/The Bells.png" id="1_eoxib"]
 [ext_resource type="Script" path="res://MainMenu/TestScene.gd" id="1_ljpw3"]
@@ -13,6 +13,7 @@
 [ext_resource type="AudioStream" uid="uid://cqn2i13rraumd" path="res://audio/Bell10.wav" id="11_lleue"]
 [ext_resource type="Script" path="res://MainMenu/PlayBackControl.gd" id="12_5onk2"]
 [ext_resource type="Script" path="res://MainMenu/Synth Control.gd" id="13_v75r3"]
+[ext_resource type="Script" path="res://MainMenu/Control.gd" id="14_7f24g"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -207,6 +208,12 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("13_v75r3")
+
+[node name="Control" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("14_7f24g")
 
 [connection signal="pressed" from="Button1" to="." method="_on_button_1_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
