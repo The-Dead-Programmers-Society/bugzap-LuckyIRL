@@ -63,83 +63,83 @@ stream = ExtResource("11_lleue")
 
 [node name="Button1" type="Button" parent="."]
 layout_mode = 2
-offset_left = 537.0
-offset_top = 50.0
-offset_right = 615.0
-offset_bottom = 81.0
-text = "Press Me
+offset_left = 53.0
+offset_top = 101.0
+offset_right = 131.0
+offset_bottom = 132.0
+text = "Bell 1
 "
 
 [node name="Button2" type="Button" parent="."]
 layout_mode = 2
-offset_left = 537.0
-offset_top = 85.0
-offset_right = 615.0
-offset_bottom = 116.0
-text = "Press Me
+offset_left = 176.0
+offset_top = 101.0
+offset_right = 254.0
+offset_bottom = 132.0
+text = "Bell 2
 "
 
 [node name="Button3" type="Button" parent="."]
 layout_mode = 2
-offset_left = 537.0
-offset_top = 120.0
-offset_right = 615.0
-offset_bottom = 151.0
-text = "Press Me
+offset_left = 306.0
+offset_top = 100.0
+offset_right = 384.0
+offset_bottom = 131.0
+text = "Bell 3
 "
 
 [node name="Button4" type="Button" parent="."]
 layout_mode = 2
-offset_left = 537.0
-offset_top = 155.0
-offset_right = 615.0
-offset_bottom = 186.0
-text = "Press Me
+offset_left = 429.0
+offset_top = 101.0
+offset_right = 507.0
+offset_bottom = 132.0
+text = "Bell 4
 "
 
 [node name="Button5" type="Button" parent="."]
 layout_mode = 2
-offset_left = 537.0
-offset_top = 190.0
-offset_right = 615.0
-offset_bottom = 221.0
-text = "Press Me
+offset_left = 551.0
+offset_top = 101.0
+offset_right = 629.0
+offset_bottom = 132.0
+text = "Bell 5
 "
 
 [node name="Button6" type="Button" parent="."]
 layout_mode = 2
-offset_left = 537.0
-offset_top = 225.0
-offset_right = 615.0
-offset_bottom = 256.0
-text = "Press Me
+offset_left = 675.0
+offset_top = 103.0
+offset_right = 753.0
+offset_bottom = 134.0
+text = "Bell 6
 "
 
 [node name="Button7" type="Button" parent="."]
 layout_mode = 2
-offset_left = 537.0
-offset_top = 260.0
-offset_right = 615.0
-offset_bottom = 291.0
-text = "Press Me
+offset_left = 794.0
+offset_top = 102.0
+offset_right = 872.0
+offset_bottom = 133.0
+text = "Bell 7
 "
 
 [node name="Button8" type="Button" parent="."]
 layout_mode = 2
-offset_left = 537.0
-offset_top = 295.0
-offset_right = 615.0
-offset_bottom = 326.0
-text = "Press Me
+offset_left = 913.0
+offset_top = 101.0
+offset_right = 991.0
+offset_bottom = 132.0
+text = "Bell 8
 "
 
 [node name="Button9" type="Button" parent="."]
 layout_mode = 2
-offset_left = 537.0
-offset_top = 330.0
-offset_right = 615.0
-offset_bottom = 361.0
-text = "Press Me
+offset_left = 1028.0
+offset_top = 99.0
+offset_right = 1106.0
+offset_bottom = 130.0
+text = "Bell 9
 "
 
 [node name="PlayBackControl" type="Control" parent="."]
@@ -150,18 +150,18 @@ script = ExtResource("12_5onk2")
 
 [node name="RecordButton" type="Button" parent="PlayBackControl"]
 layout_mode = 0
-offset_left = 330.0
-offset_top = 451.0
-offset_right = 402.0
-offset_bottom = 503.0
+offset_left = 229.0
+offset_top = 504.0
+offset_right = 301.0
+offset_bottom = 556.0
 text = "Record"
 
 [node name="PlayButton" type="Button" parent="PlayBackControl"]
 layout_mode = 0
-offset_left = 738.0
-offset_top = 444.0
-offset_right = 809.0
-offset_bottom = 496.0
+offset_left = 781.0
+offset_top = 510.0
+offset_right = 852.0
+offset_bottom = 562.0
 text = "Play"
 
 [node name="PlayBackPlayer" type="AudioStreamPlayer" parent="PlayBackControl"]
@@ -173,33 +173,60 @@ offset_bottom = 40.0
 
 [node name="Button" type="Button" parent="UI Control"]
 layout_mode = 0
-offset_left = 63.0
-offset_top = 318.0
-offset_right = 128.0
-offset_bottom = 382.0
+offset_left = 355.0
+offset_top = 386.0
+offset_right = 420.0
+offset_bottom = 450.0
 text = "Synth
 "
 
 [node name="Frequency" type="VSlider" parent="UI Control"]
 layout_mode = 0
-offset_left = 171.0
-offset_top = 252.0
-offset_right = 187.0
-offset_bottom = 388.0
+offset_left = 463.0
+offset_top = 320.0
+offset_right = 479.0
+offset_bottom = 456.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="UI Control/Frequency"]
+modulate = Color(0.87451, 0, 0.784314, 1)
+layout_mode = 0
+offset_left = -36.0
+offset_top = 137.0
+offset_right = 51.0
+offset_bottom = 163.0
+text = "Frequency"
 
 [node name="Amplitude" type="VSlider" parent="UI Control"]
 layout_mode = 0
-offset_left = 230.0
-offset_top = 254.0
-offset_right = 246.0
-offset_bottom = 390.0
+offset_left = 576.0
+offset_top = 319.0
+offset_right = 592.0
+offset_bottom = 455.0
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="UI Control/Amplitude"]
+modulate = Color(0.87451, 0, 0.784314, 1)
+layout_mode = 0
+offset_left = -35.0
+offset_top = 139.0
+offset_right = 52.0
+offset_bottom = 165.0
+text = "Amplitude"
 
 [node name="Duration" type="VSlider" parent="UI Control"]
 layout_mode = 0
-offset_left = 290.0
-offset_top = 254.0
-offset_right = 306.0
-offset_bottom = 390.0
+offset_left = 688.0
+offset_top = 319.0
+offset_right = 704.0
+offset_bottom = 455.0
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="UI Control/Duration"]
+modulate = Color(0.87451, 0, 0.784314, 1)
+layout_mode = 0
+offset_left = -30.0
+offset_top = 138.0
+offset_right = 57.0
+offset_bottom = 164.0
+text = "Duration"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="UI Control"]
 
