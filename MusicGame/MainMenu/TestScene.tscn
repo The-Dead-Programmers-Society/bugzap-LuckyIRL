@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 [gd_scene load_steps=17 format=3 uid="uid://k5ymjlmc0akl"]
+=======
+[gd_scene load_steps=15 format=3 uid="uid://k5ymjlmc0akl"]
+>>>>>>> parent of 6afe9f9 (Working bells)
 
 [ext_resource type="Texture2D" uid="uid://bej7cqif4xqwx" path="res://Sprites/The Bells.png" id="1_eoxib"]
 [ext_resource type="Script" path="res://MainMenu/TestScene.gd" id="1_ljpw3"]
@@ -12,10 +16,15 @@
 [ext_resource type="AudioStream" uid="uid://blmskn7grjwy7" path="res://audio/Bell8.wav" id="10_ux07x"]
 [ext_resource type="AudioStream" uid="uid://cqn2i13rraumd" path="res://audio/Bell10.wav" id="11_lleue"]
 [ext_resource type="Script" path="res://MainMenu/PlayBackControl.gd" id="12_5onk2"]
+<<<<<<< HEAD
 [ext_resource type="Script" path="res://MainMenu/Button.gd" id="12_jcafr"]
 [ext_resource type="AudioStream" uid="uid://yhwnugn5pnxg" path="res://audio/Bell16.wav" id="13_7nqdy"]
 [ext_resource type="Texture2D" uid="uid://bds5cdiia1kl4" path="res://Sprites/orb.png" id="14_r13ih"]
 [ext_resource type="Script" path="res://MainMenu/Sprite2D.gd" id="15_76t78"]
+=======
+[ext_resource type="Script" path="res://MainMenu/Synth Control.gd" id="13_v75r3"]
+[ext_resource type="Script" path="res://MainMenu/Control.gd" id="14_7f24g"]
+>>>>>>> parent of 6afe9f9 (Working bells)
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -249,8 +258,17 @@ text = "Duration"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="UI Control"]
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("13_7nqdy")
+[node name="Synth Control" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("13_v75r3")
+
+[node name="Control" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("14_7f24g")
 
 [connection signal="pressed" from="Button1" to="." method="_on_button_1_pressed"]
 [connection signal="sprite_hover" from="Button1" to="." method="_on_button_1_sprite_hover"]
@@ -272,3 +290,5 @@ stream = ExtResource("13_7nqdy")
 [connection signal="sprite_hover" from="Button9" to="." method="_on_button_9_sprite_hover"]
 [connection signal="pressed" from="PlayBackControl/RecordButton" to="PlayBackControl" method="_on_record_button_pressed"]
 [connection signal="pressed" from="PlayBackControl/PlayButton" to="PlayBackControl" method="_on_play_button_pressed"]
+[connection signal="pressed" from="UI Control/Button" to="Synth Control" method="_on_button_pressed"]
+[connection signal="value_changed" from="UI Control/Frequency" to="Synth Control" method="_on_frequency_value_changed"]
