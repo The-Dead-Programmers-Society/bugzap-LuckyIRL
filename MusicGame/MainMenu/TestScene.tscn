@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://k5ymjlmc0akl"]
+[gd_scene load_steps=17 format=3 uid="uid://k5ymjlmc0akl"]
 
 [ext_resource type="Texture2D" uid="uid://bej7cqif4xqwx" path="res://Sprites/The Bells.png" id="1_eoxib"]
 [ext_resource type="Script" path="res://MainMenu/TestScene.gd" id="1_ljpw3"]
@@ -12,7 +12,10 @@
 [ext_resource type="AudioStream" uid="uid://blmskn7grjwy7" path="res://audio/Bell8.wav" id="10_ux07x"]
 [ext_resource type="AudioStream" uid="uid://cqn2i13rraumd" path="res://audio/Bell10.wav" id="11_lleue"]
 [ext_resource type="Script" path="res://MainMenu/PlayBackControl.gd" id="12_5onk2"]
+[ext_resource type="Script" path="res://MainMenu/Button.gd" id="12_jcafr"]
 [ext_resource type="AudioStream" uid="uid://yhwnugn5pnxg" path="res://audio/Bell16.wav" id="13_7nqdy"]
+[ext_resource type="Texture2D" uid="uid://bds5cdiia1kl4" path="res://Sprites/orb.png" id="14_r13ih"]
+[ext_resource type="Script" path="res://MainMenu/Sprite2D.gd" id="15_76t78"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -68,6 +71,7 @@ offset_right = 131.0
 offset_bottom = 132.0
 text = "Bell 1
 "
+script = ExtResource("12_jcafr")
 
 [node name="Button2" type="Button" parent="."]
 layout_mode = 2
@@ -77,6 +81,7 @@ offset_right = 254.0
 offset_bottom = 132.0
 text = "Bell 2
 "
+script = ExtResource("12_jcafr")
 
 [node name="Button3" type="Button" parent="."]
 layout_mode = 2
@@ -86,6 +91,7 @@ offset_right = 384.0
 offset_bottom = 131.0
 text = "Bell 3
 "
+script = ExtResource("12_jcafr")
 
 [node name="Button4" type="Button" parent="."]
 layout_mode = 2
@@ -95,6 +101,7 @@ offset_right = 507.0
 offset_bottom = 132.0
 text = "Bell 4
 "
+script = ExtResource("12_jcafr")
 
 [node name="Button5" type="Button" parent="."]
 layout_mode = 2
@@ -104,6 +111,7 @@ offset_right = 629.0
 offset_bottom = 132.0
 text = "Bell 5
 "
+script = ExtResource("12_jcafr")
 
 [node name="Button6" type="Button" parent="."]
 layout_mode = 2
@@ -113,6 +121,7 @@ offset_right = 753.0
 offset_bottom = 134.0
 text = "Bell 6
 "
+script = ExtResource("12_jcafr")
 
 [node name="Button7" type="Button" parent="."]
 layout_mode = 2
@@ -122,6 +131,7 @@ offset_right = 872.0
 offset_bottom = 133.0
 text = "Bell 7
 "
+script = ExtResource("12_jcafr")
 
 [node name="Button8" type="Button" parent="."]
 layout_mode = 2
@@ -131,6 +141,7 @@ offset_right = 991.0
 offset_bottom = 132.0
 text = "Bell 8
 "
+script = ExtResource("12_jcafr")
 
 [node name="Button9" type="Button" parent="."]
 layout_mode = 2
@@ -140,6 +151,15 @@ offset_right = 1106.0
 offset_bottom = 130.0
 text = "Bell 9
 "
+script = ExtResource("12_jcafr")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(191, 298)
+scale = Vector2(0.0966797, 0.0966797)
+texture = ExtResource("14_r13ih")
+script = ExtResource("15_76t78")
+
+[node name="Timer" type="Timer" parent="Sprite2D"]
 
 [node name="PlayBackControl" type="Control" parent="."]
 anchors_preset = 0
@@ -233,13 +253,22 @@ text = "Duration"
 stream = ExtResource("13_7nqdy")
 
 [connection signal="pressed" from="Button1" to="." method="_on_button_1_pressed"]
+[connection signal="sprite_hover" from="Button1" to="." method="_on_button_1_sprite_hover"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
+[connection signal="sprite_hover" from="Button2" to="." method="_on_button_2_sprite_hover"]
 [connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
+[connection signal="sprite_hover" from="Button3" to="." method="_on_button_3_sprite_hover"]
 [connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
+[connection signal="sprite_hover" from="Button4" to="." method="_on_button_4_sprite_hover"]
 [connection signal="pressed" from="Button5" to="." method="_on_button_5_pressed"]
+[connection signal="sprite_hover" from="Button5" to="." method="_on_button_5_sprite_hover"]
 [connection signal="pressed" from="Button6" to="." method="_on_button_6_pressed"]
+[connection signal="sprite_hover" from="Button6" to="." method="_on_button_6_sprite_hover"]
 [connection signal="pressed" from="Button7" to="." method="_on_button_7_pressed"]
+[connection signal="sprite_hover" from="Button7" to="." method="_on_button_7_sprite_hover"]
 [connection signal="pressed" from="Button8" to="." method="_on_button_8_pressed"]
+[connection signal="sprite_hover" from="Button8" to="." method="_on_button_8_sprite_hover"]
 [connection signal="pressed" from="Button9" to="." method="_on_button_9_pressed"]
+[connection signal="sprite_hover" from="Button9" to="." method="_on_button_9_sprite_hover"]
 [connection signal="pressed" from="PlayBackControl/RecordButton" to="PlayBackControl" method="_on_record_button_pressed"]
 [connection signal="pressed" from="PlayBackControl/PlayButton" to="PlayBackControl" method="_on_play_button_pressed"]
