@@ -16,11 +16,17 @@ It uses the on mouse enter and on mouse exit signals to play the sounds when the
 
 # List of classes/assets in the project 
 
-| Class/asset | Source |
+| Class | Source |
 |-----------|-----------|
 | TestScene.gd | Self written |
 | Orb.gd | Modified from [reference](https://docs.godotengine.org/en/3.0/getting_started/step_by_step/your_first_game.html) |
 | RecordPlay.gd | From [reference](https://www.youtube.com/watch?v=AzNSbkoompg&t=3s) |
+
+| Asset | Source |
+|-----------|-----------|
+| Bells.wav | [Reference](https://freesound.org) |
+| Images    | Photoshop |
+
 
 # References
 
