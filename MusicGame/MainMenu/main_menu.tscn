@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://vhg148ufgq54"]
+[gd_scene load_steps=4 format=3 uid="uid://vhg148ufgq54"]
 
 [ext_resource type="Script" path="res://MainMenu/main_menu.gd" id="1_4i1dm"]
-[ext_resource type="Texture2D" uid="uid://btucfpma7iin7" path="res://Sprites/MainScreen.png" id="1_7fahw"]
+[ext_resource type="Texture2D" uid="uid://dyhrjknl3b5y5" path="res://Sprites/Main.png" id="2_ixuxr"]
+[ext_resource type="Texture2D" uid="uid://oa6wa2qppnvo" path="res://Sprites/b.png" id="3_347g0"]
 
 [node name="Main_Menu" type="Control"]
 layout_mode = 3
@@ -19,8 +20,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_7fahw")
+texture = ExtResource("2_ixuxr")
 expand_mode = 1
+
+[node name="B" type="Sprite2D" parent="TextureRect"]
+position = Vector2(577, 342)
+scale = Vector2(0.56, 0.56)
+texture = ExtResource("3_347g0")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1

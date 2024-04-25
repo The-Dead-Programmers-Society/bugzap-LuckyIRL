@@ -1,11 +1,7 @@
-<<<<<<< HEAD
-[gd_scene load_steps=17 format=3 uid="uid://k5ymjlmc0akl"]
-=======
-[gd_scene load_steps=15 format=3 uid="uid://k5ymjlmc0akl"]
->>>>>>> parent of 6afe9f9 (Working bells)
+[gd_scene load_steps=36 format=3 uid="uid://k5ymjlmc0akl"]
 
-[ext_resource type="Texture2D" uid="uid://bej7cqif4xqwx" path="res://Sprites/The Bells.png" id="1_eoxib"]
 [ext_resource type="Script" path="res://MainMenu/TestScene.gd" id="1_ljpw3"]
+[ext_resource type="Texture2D" uid="uid://ckanr87sjka43" path="res://Sprites/Screen.png" id="2_imyhn"]
 [ext_resource type="AudioStream" uid="uid://dmxxmopmcjol4" path="res://audio/Bell1.wav" id="3_0g3yl"]
 [ext_resource type="AudioStream" uid="uid://blhub386srghi" path="res://audio/Bell2.wav" id="4_3fx12"]
 [ext_resource type="AudioStream" uid="uid://dn8n66wg07hky" path="res://audio/Bell3.wav" id="5_dhbd2"]
@@ -16,15 +12,29 @@
 [ext_resource type="AudioStream" uid="uid://blmskn7grjwy7" path="res://audio/Bell8.wav" id="10_ux07x"]
 [ext_resource type="AudioStream" uid="uid://cqn2i13rraumd" path="res://audio/Bell10.wav" id="11_lleue"]
 [ext_resource type="Script" path="res://MainMenu/PlayBackControl.gd" id="12_5onk2"]
-<<<<<<< HEAD
-[ext_resource type="Script" path="res://MainMenu/Button.gd" id="12_jcafr"]
+[ext_resource type="AudioStream" uid="uid://bk63hiddgbyfa" path="res://audio/Bell11.wav" id="12_j5cjb"]
 [ext_resource type="AudioStream" uid="uid://yhwnugn5pnxg" path="res://audio/Bell16.wav" id="13_7nqdy"]
-[ext_resource type="Texture2D" uid="uid://bds5cdiia1kl4" path="res://Sprites/orb.png" id="14_r13ih"]
-[ext_resource type="Script" path="res://MainMenu/Sprite2D.gd" id="15_76t78"]
-=======
-[ext_resource type="Script" path="res://MainMenu/Synth Control.gd" id="13_v75r3"]
-[ext_resource type="Script" path="res://MainMenu/Control.gd" id="14_7f24g"]
->>>>>>> parent of 6afe9f9 (Working bells)
+[ext_resource type="AudioStream" uid="uid://c5qqgaf3nmaia" path="res://audio/Bell12.wav" id="13_olyj6"]
+[ext_resource type="AudioStream" uid="uid://47gacqywmka7" path="res://audio/Bell13.wav" id="14_tlocm"]
+[ext_resource type="AudioStream" uid="uid://c0tarmw7oiff" path="res://audio/Bell14.wav" id="15_f4wd3"]
+[ext_resource type="AudioStream" uid="uid://bc0rpdo36l6yl" path="res://audio/Bell15.wav" id="16_xr6ru"]
+[ext_resource type="Texture2D" uid="uid://dl41706rwxsf2" path="res://Sprites/Bell1.png" id="18_rka3f"]
+[ext_resource type="Texture2D" uid="uid://cmu7k8rrjwc7r" path="res://Sprites/Bell2.png" id="19_ihe3v"]
+[ext_resource type="Texture2D" uid="uid://gamalhrsc5o6" path="res://Sprites/Bell3.png" id="19_yfuda"]
+[ext_resource type="Texture2D" uid="uid://bds5cdiia1kl4" path="res://Sprites/orb.png" id="20_dnk24"]
+[ext_resource type="Texture2D" uid="uid://c1qow7yhhscyt" path="res://Sprites/Bell4.png" id="20_fgy4o"]
+[ext_resource type="Script" path="res://MainMenu/Orb.gd" id="21_78rgd"]
+[ext_resource type="Texture2D" uid="uid://eot1w88yv58a" path="res://Sprites/Bell5.png" id="21_unw0q"]
+[ext_resource type="Texture2D" uid="uid://b0gjvfcbolukd" path="res://Sprites/Bell6.png" id="22_1hxca"]
+[ext_resource type="Texture2D" uid="uid://xqsqjax21bfk" path="res://Sprites/Bell7.png" id="23_6mdl5"]
+[ext_resource type="Texture2D" uid="uid://c2xjhrebn1w4s" path="res://Sprites/Bell8.png" id="24_r6in4"]
+[ext_resource type="Texture2D" uid="uid://b7jqjxid8pl2u" path="res://Sprites/Bell9.png" id="25_52r3l"]
+[ext_resource type="Texture2D" uid="uid://b15i50n8n22cp" path="res://Sprites/Bell10.png" id="26_57qwq"]
+[ext_resource type="Texture2D" uid="uid://cl3fh2qgntu45" path="res://Sprites/Bell11.png" id="27_ss8hs"]
+[ext_resource type="Texture2D" uid="uid://b8m1j2dbnijs6" path="res://Sprites/Bell12.png" id="28_qvrxd"]
+[ext_resource type="Texture2D" uid="uid://v8cvos4olaqw" path="res://Sprites/Bell13.png" id="29_xho67"]
+[ext_resource type="Texture2D" uid="uid://dgctckiuscqog" path="res://Sprites/Bell14.png" id="30_yg4sf"]
+[ext_resource type="Texture2D" uid="uid://c44c3lu2uuuyg" path="res://Sprites/Bell15.png" id="31_i6amn"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -42,7 +52,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_eoxib")
+texture = ExtResource("2_imyhn")
 expand_mode = 1
 
 [node name="AudioStreamPlayer1" type="AudioStreamPlayer" parent="."]
@@ -72,103 +82,237 @@ stream = ExtResource("10_ux07x")
 [node name="AudioStreamPlayer9" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("11_lleue")
 
+[node name="AudioStreamPlayer10" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("12_j5cjb")
+
+[node name="AudioStreamPlayer11" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_olyj6")
+
+[node name="AudioStreamPlayer12" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("14_tlocm")
+
+[node name="AudioStreamPlayer13" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("15_f4wd3")
+
+[node name="AudioStreamPlayer14" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("16_xr6ru")
+
+[node name="AudioStreamPlayer15" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_7nqdy")
+
 [node name="Button1" type="Button" parent="."]
 layout_mode = 2
-offset_left = 53.0
-offset_top = 101.0
-offset_right = 131.0
-offset_bottom = 132.0
+offset_left = 51.0
+offset_top = 155.0
+offset_right = 129.0
+offset_bottom = 186.0
 text = "Bell 1
 "
-script = ExtResource("12_jcafr")
+
+[node name="Sprite2D" type="Sprite2D" parent="Button1"]
+position = Vector2(48, 12)
+texture = ExtResource("18_rka3f")
 
 [node name="Button2" type="Button" parent="."]
 layout_mode = 2
-offset_left = 176.0
-offset_top = 101.0
-offset_right = 254.0
-offset_bottom = 132.0
+offset_left = 174.0
+offset_top = 155.0
+offset_right = 252.0
+offset_bottom = 186.0
 text = "Bell 2
 "
-script = ExtResource("12_jcafr")
+
+[node name="Sprite2D" type="Sprite2D" parent="Button2"]
+position = Vector2(42, 15)
+scale = Vector2(0.164063, 0.164063)
+texture = ExtResource("19_yfuda")
 
 [node name="Button3" type="Button" parent="."]
 layout_mode = 2
-offset_left = 306.0
-offset_top = 100.0
-offset_right = 384.0
-offset_bottom = 131.0
+offset_left = 304.0
+offset_top = 154.0
+offset_right = 382.0
+offset_bottom = 185.0
 text = "Bell 3
 "
-script = ExtResource("12_jcafr")
+
+[node name="Sprite2D" type="Sprite2D" parent="Button3"]
+position = Vector2(38, 11)
+scale = Vector2(0.161133, 0.161133)
+texture = ExtResource("20_fgy4o")
 
 [node name="Button4" type="Button" parent="."]
 layout_mode = 2
-offset_left = 429.0
-offset_top = 101.0
-offset_right = 507.0
-offset_bottom = 132.0
+offset_left = 427.0
+offset_top = 155.0
+offset_right = 505.0
+offset_bottom = 186.0
 text = "Bell 4
 "
-script = ExtResource("12_jcafr")
+
+[node name="Sprite2D" type="Sprite2D" parent="Button4"]
+position = Vector2(37, 9)
+scale = Vector2(0.19043, 0.19043)
+texture = ExtResource("21_unw0q")
 
 [node name="Button5" type="Button" parent="."]
 layout_mode = 2
-offset_left = 551.0
-offset_top = 101.0
-offset_right = 629.0
-offset_bottom = 132.0
+offset_left = 549.0
+offset_top = 155.0
+offset_right = 627.0
+offset_bottom = 186.0
 text = "Bell 5
 "
-script = ExtResource("12_jcafr")
+
+[node name="Sprite2D" type="Sprite2D" parent="Button5"]
+position = Vector2(36.125, 13.875)
+scale = Vector2(0.16748, 0.16748)
+texture = ExtResource("22_1hxca")
 
 [node name="Button6" type="Button" parent="."]
 layout_mode = 2
-offset_left = 675.0
-offset_top = 103.0
-offset_right = 753.0
-offset_bottom = 134.0
+offset_left = 673.0
+offset_top = 157.0
+offset_right = 751.0
+offset_bottom = 188.0
 text = "Bell 6
 "
-script = ExtResource("12_jcafr")
+
+[node name="Sprite2D" type="Sprite2D" parent="Button6"]
+position = Vector2(45, 9)
+scale = Vector2(0.196289, 0.196289)
+texture = ExtResource("23_6mdl5")
 
 [node name="Button7" type="Button" parent="."]
 layout_mode = 2
-offset_left = 794.0
-offset_top = 102.0
-offset_right = 872.0
-offset_bottom = 133.0
+offset_left = 792.0
+offset_top = 156.0
+offset_right = 870.0
+offset_bottom = 187.0
 text = "Bell 7
 "
-script = ExtResource("12_jcafr")
+
+[node name="Sprite2D" type="Sprite2D" parent="Button7"]
+position = Vector2(39, 12)
+scale = Vector2(0.181641, 0.181641)
+texture = ExtResource("24_r6in4")
 
 [node name="Button8" type="Button" parent="."]
 layout_mode = 2
-offset_left = 913.0
-offset_top = 101.0
-offset_right = 991.0
-offset_bottom = 132.0
+offset_left = 911.0
+offset_top = 155.0
+offset_right = 989.0
+offset_bottom = 186.0
 text = "Bell 8
 "
-script = ExtResource("12_jcafr")
+
+[node name="Sprite2D" type="Sprite2D" parent="Button8"]
+position = Vector2(37, 20)
+scale = Vector2(0.191406, 0.191406)
+texture = ExtResource("25_52r3l")
 
 [node name="Button9" type="Button" parent="."]
 layout_mode = 2
-offset_left = 1028.0
-offset_top = 99.0
-offset_right = 1106.0
-offset_bottom = 130.0
+offset_left = 1026.0
+offset_top = 153.0
+offset_right = 1104.0
+offset_bottom = 184.0
 text = "Bell 9
 "
-script = ExtResource("12_jcafr")
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(191, 298)
-scale = Vector2(0.0966797, 0.0966797)
-texture = ExtResource("14_r13ih")
-script = ExtResource("15_76t78")
+[node name="Sprite2D" type="Sprite2D" parent="Button9"]
+position = Vector2(35, 20)
+scale = Vector2(0.208984, 0.208984)
+texture = ExtResource("26_57qwq")
 
-[node name="Timer" type="Timer" parent="Sprite2D"]
+[node name="Button10" type="Button" parent="."]
+layout_mode = 2
+offset_left = 207.0
+offset_top = 318.0
+offset_right = 285.0
+offset_bottom = 349.0
+text = "Bell 10
+"
+
+[node name="Sprite2D" type="Sprite2D" parent="Button10"]
+position = Vector2(40, 9)
+scale = Vector2(0.205078, 0.205078)
+texture = ExtResource("27_ss8hs")
+
+[node name="Button11" type="Button" parent="."]
+layout_mode = 2
+offset_left = 330.0
+offset_top = 318.0
+offset_right = 408.0
+offset_bottom = 349.0
+text = "Bell 11
+"
+
+[node name="Sprite2D" type="Sprite2D" parent="Button11"]
+position = Vector2(39, 14)
+scale = Vector2(0.229492, 0.229492)
+texture = ExtResource("28_qvrxd")
+
+[node name="Button12" type="Button" parent="."]
+layout_mode = 2
+offset_left = 460.0
+offset_top = 317.0
+offset_right = 538.0
+offset_bottom = 348.0
+text = "Bell 12
+"
+
+[node name="Sprite2D" type="Sprite2D" parent="Button12"]
+position = Vector2(37, 8)
+scale = Vector2(0.193359, 0.193359)
+texture = ExtResource("29_xho67")
+
+[node name="Button13" type="Button" parent="."]
+layout_mode = 2
+offset_left = 583.0
+offset_top = 318.0
+offset_right = 661.0
+offset_bottom = 349.0
+text = "Bell 13
+"
+
+[node name="Sprite2D" type="Sprite2D" parent="Button13"]
+position = Vector2(43, 11)
+scale = Vector2(0.22168, 0.22168)
+texture = ExtResource("30_yg4sf")
+
+[node name="Button14" type="Button" parent="."]
+layout_mode = 2
+offset_left = 705.0
+offset_top = 318.0
+offset_right = 783.0
+offset_bottom = 349.0
+text = "Bell 14
+"
+
+[node name="Sprite2D" type="Sprite2D" parent="Button14"]
+position = Vector2(45, 14)
+scale = Vector2(0.228516, 0.228516)
+texture = ExtResource("31_i6amn")
+
+[node name="Button15" type="Button" parent="."]
+layout_mode = 2
+offset_left = 829.0
+offset_top = 320.0
+offset_right = 907.0
+offset_bottom = 351.0
+text = "Bell 15
+"
+
+[node name="Sprite2D" type="Sprite2D" parent="Button15"]
+position = Vector2(36, 10)
+texture = ExtResource("19_ihe3v")
+
+[node name="Orb" type="Sprite2D" parent="."]
+position = Vector2(574, 550)
+scale = Vector2(0.107422, 0.107422)
+texture = ExtResource("20_dnk24")
+script = ExtResource("21_78rgd")
 
 [node name="PlayBackControl" type="Control" parent="."]
 anchors_preset = 0
@@ -178,18 +322,18 @@ script = ExtResource("12_5onk2")
 
 [node name="RecordButton" type="Button" parent="PlayBackControl"]
 layout_mode = 0
-offset_left = 229.0
-offset_top = 504.0
-offset_right = 301.0
-offset_bottom = 556.0
+offset_left = 152.0
+offset_top = 464.0
+offset_right = 224.0
+offset_bottom = 516.0
 text = "Record"
 
 [node name="PlayButton" type="Button" parent="PlayBackControl"]
 layout_mode = 0
-offset_left = 781.0
-offset_top = 510.0
-offset_right = 852.0
-offset_bottom = 562.0
+offset_left = 872.0
+offset_top = 474.0
+offset_right = 943.0
+offset_bottom = 526.0
 text = "Play"
 
 [node name="PlayBackPlayer" type="AudioStreamPlayer" parent="PlayBackControl"]
@@ -201,19 +345,19 @@ offset_bottom = 40.0
 
 [node name="Button" type="Button" parent="UI Control"]
 layout_mode = 0
-offset_left = 355.0
-offset_top = 386.0
-offset_right = 420.0
-offset_bottom = 450.0
+offset_left = 352.0
+offset_top = 489.0
+offset_right = 417.0
+offset_bottom = 553.0
 text = "Synth
 "
 
 [node name="Frequency" type="VSlider" parent="UI Control"]
 layout_mode = 0
-offset_left = 463.0
-offset_top = 320.0
-offset_right = 479.0
-offset_bottom = 456.0
+offset_left = 460.0
+offset_top = 423.0
+offset_right = 476.0
+offset_bottom = 559.0
 
 [node name="RichTextLabel" type="RichTextLabel" parent="UI Control/Frequency"]
 modulate = Color(0.87451, 0, 0.784314, 1)
@@ -226,10 +370,10 @@ text = "Frequency"
 
 [node name="Amplitude" type="VSlider" parent="UI Control"]
 layout_mode = 0
-offset_left = 576.0
-offset_top = 319.0
-offset_right = 592.0
-offset_bottom = 455.0
+offset_left = 573.0
+offset_top = 422.0
+offset_right = 589.0
+offset_bottom = 558.0
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="UI Control/Amplitude"]
 modulate = Color(0.87451, 0, 0.784314, 1)
@@ -242,10 +386,10 @@ text = "Amplitude"
 
 [node name="Duration" type="VSlider" parent="UI Control"]
 layout_mode = 0
-offset_left = 688.0
-offset_top = 319.0
-offset_right = 704.0
-offset_bottom = 455.0
+offset_left = 685.0
+offset_top = 422.0
+offset_right = 701.0
+offset_bottom = 558.0
 
 [node name="RichTextLabel3" type="RichTextLabel" parent="UI Control/Duration"]
 modulate = Color(0.87451, 0, 0.784314, 1)
@@ -258,37 +402,24 @@ text = "Duration"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="UI Control"]
 
-[node name="Synth Control" type="Control" parent="."]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-script = ExtResource("13_v75r3")
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("13_7nqdy")
 
-[node name="Control" type="Control" parent="."]
-anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
-script = ExtResource("14_7f24g")
-
-[connection signal="pressed" from="Button1" to="." method="_on_button_1_pressed"]
-[connection signal="sprite_hover" from="Button1" to="." method="_on_button_1_sprite_hover"]
-[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
-[connection signal="sprite_hover" from="Button2" to="." method="_on_button_2_sprite_hover"]
-[connection signal="pressed" from="Button3" to="." method="_on_button_3_pressed"]
-[connection signal="sprite_hover" from="Button3" to="." method="_on_button_3_sprite_hover"]
-[connection signal="pressed" from="Button4" to="." method="_on_button_4_pressed"]
-[connection signal="sprite_hover" from="Button4" to="." method="_on_button_4_sprite_hover"]
-[connection signal="pressed" from="Button5" to="." method="_on_button_5_pressed"]
-[connection signal="sprite_hover" from="Button5" to="." method="_on_button_5_sprite_hover"]
-[connection signal="pressed" from="Button6" to="." method="_on_button_6_pressed"]
-[connection signal="sprite_hover" from="Button6" to="." method="_on_button_6_sprite_hover"]
-[connection signal="pressed" from="Button7" to="." method="_on_button_7_pressed"]
-[connection signal="sprite_hover" from="Button7" to="." method="_on_button_7_sprite_hover"]
-[connection signal="pressed" from="Button8" to="." method="_on_button_8_pressed"]
-[connection signal="sprite_hover" from="Button8" to="." method="_on_button_8_sprite_hover"]
-[connection signal="pressed" from="Button9" to="." method="_on_button_9_pressed"]
-[connection signal="sprite_hover" from="Button9" to="." method="_on_button_9_sprite_hover"]
+[connection signal="mouse_entered" from="Button1" to="." method="_on_button_1_mouse_entered"]
+[connection signal="mouse_entered" from="Button2" to="." method="_on_button_2_mouse_entered"]
+[connection signal="mouse_entered" from="Button3" to="." method="_on_button_3_mouse_entered"]
+[connection signal="mouse_entered" from="Button4" to="." method="_on_button_4_mouse_entered"]
+[connection signal="mouse_entered" from="Button5" to="." method="_on_button_5_mouse_entered"]
+[connection signal="mouse_entered" from="Button6" to="." method="_on_button_6_mouse_entered"]
+[connection signal="mouse_entered" from="Button7" to="." method="_on_button_7_mouse_entered"]
+[connection signal="mouse_entered" from="Button8" to="." method="_on_button_8_mouse_entered"]
+[connection signal="mouse_entered" from="Button9" to="." method="_on_button_9_mouse_entered"]
+[connection signal="mouse_entered" from="Button10" to="." method="_on_button_10_mouse_entered"]
+[connection signal="mouse_entered" from="Button11" to="." method="_on_button_11_mouse_entered"]
+[connection signal="mouse_entered" from="Button12" to="." method="_on_button_12_mouse_entered"]
+[connection signal="mouse_entered" from="Button13" to="." method="_on_button_13_mouse_entered"]
+[connection signal="pressed" from="Button13" to="." method="_on_button_13_pressed"]
+[connection signal="mouse_entered" from="Button14" to="." method="_on_button_14_mouse_entered"]
+[connection signal="mouse_entered" from="Button15" to="." method="_on_button_15_mouse_entered"]
 [connection signal="pressed" from="PlayBackControl/RecordButton" to="PlayBackControl" method="_on_record_button_pressed"]
 [connection signal="pressed" from="PlayBackControl/PlayButton" to="PlayBackControl" method="_on_play_button_pressed"]
-[connection signal="pressed" from="UI Control/Button" to="Synth Control" method="_on_button_pressed"]
-[connection signal="value_changed" from="UI Control/Frequency" to="Synth Control" method="_on_frequency_value_changed"]

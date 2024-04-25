@@ -1,74 +1,62 @@
 extends Control
 
-func _ready():
-	# Connect to the sprite_hover signal of each button
-	for button in $Control.get_children():
-		button.connect("sprite_hover", self, "_on_button_hover")
+# Array to store recorded audio data
+var recorded_bell_sounds: Array = []
 
-func _on_button_1_hover(button):
-	print("Sprite hovered over button:", button.name)
-	# Perform any other actions here, such as triggering sounds
+func _on_button_1_mouse_entered():
 	$AudioStreamPlayer1.play()
 
-func _on_button_1_pressed():
-	$AudioStreamPlayer1.play()
-func _on_button_2_pressed():
+
+func _on_button_2_mouse_entered():
 	$AudioStreamPlayer2.play()
-func _on_button_3_pressed():
+
+
+func _on_button_3_mouse_entered():
 	$AudioStreamPlayer3.play()
-func _on_button_4_pressed():
+
+
+func _on_button_4_mouse_entered():
 	$AudioStreamPlayer4.play()
-func _on_button_5_pressed():
+
+
+func _on_button_5_mouse_entered():
 	$AudioStreamPlayer5.play()
-func _on_button_6_pressed():
+
+
+func _on_button_6_mouse_entered():
 	$AudioStreamPlayer6.play()
-func _on_button_7_pressed():
+
+
+func _on_button_7_mouse_entered():
 	$AudioStreamPlayer7.play()
-func _on_button_8_pressed():
+
+
+func _on_button_8_mouse_entered():
 	$AudioStreamPlayer8.play()
-func _on_button_9_pressed():
+
+
+func _on_button_9_mouse_entered():
 	$AudioStreamPlayer9.play()
 
 
-func _on_button_1_sprite_hover():
-	$AudioStreamPlayer1.play()
-	
-
-func _on_button_2_sprite_hover():
-	$AudioStreamPlayer2.play()
-	pass # Replace with function body.
+func _on_button_10_mouse_entered():
+	$AudioStreamPlayer10.play()
 
 
-func _on_button_3_sprite_hover():
-	$AudioStreamPlayer3.play()
-	pass # Replace with function body.
+func _on_button_11_mouse_entered():
+	$AudioStreamPlayer11.play()
 
 
-func _on_button_4_sprite_hover():
-	$AudioStreamPlayer4.play()
-	pass # Replace with function body.
+func _on_button_12_mouse_entered():
+	$AudioStreamPlayer12.play()
 
 
-func _on_button_5_sprite_hover():
-	$AudioStreamPlayer5.play()
-	pass # Replace with function body.
+func _on_button_13_mouse_entered():
+	$AudioStreamPlayer13.play()
 
 
-func _on_button_6_sprite_hover():
-	$AudioStreamPlayer6.play()
-	pass # Replace with function body.
+func _on_button_14_mouse_entered():
+	$AudioStreamPlayer14.play()
 
-
-func _on_button_7_sprite_hover():
-	$AudioStreamPlayer7.play()
-	pass # Replace with function body.
-
-
-func _on_button_8_sprite_hover():
-	$AudioStreamPlayer8.play()
-	pass # Replace with function body.
-
-
-func _on_button_9_sprite_hover():
-	$AudioStreamPlayer9.play()
-	pass # Replace with function body.
+func _on_button_15_mouse_entered():
+	$AudioStreamPlayer15.play()

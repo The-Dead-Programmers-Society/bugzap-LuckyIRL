@@ -2,12 +2,10 @@
 
 [ext_resource type="Script" path="res://generator_demo.gd" id="1"]
 
-[sub_resource type="AudioStream" id="AudioStream_m1odm"]
+[sub_resource type="AudioStreamGenerator" id="1"]
 
 [node name="Generator" type="Node"]
 script = ExtResource("1")
 
 [node name="Player" type="AudioStreamPlayer" parent="."]
-stream = SubResource("AudioStream_m1odm")
-volume_db = 9.258
-pitch_scale = 1.68
+stream = SubResource("1")
