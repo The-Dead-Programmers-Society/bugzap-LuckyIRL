@@ -72,7 +72,7 @@ Link to the Youtube video of my Godot project:
 ![YouTube](https://www.youtube.com/watch?v=S_fmlTQDqLM)
 [![YouTube](https://media.discordapp.net/attachments/1164234194877157501/1233188175627817051/GodotImage.png?ex=662c2f7c&is=662addfc&hm=9d3aa60ba1bd139f9108e1e92170c8d011137ce74dc2c9ec099c795fb5b5c0c0&=&format=webp&quality=lossless&width=1395&height=785)](https://www.youtube.com/watch?v=S_fmlTQDqLM)
 
-![My Itch.io page](https://luckyirl.itch.io/)
+[My Itch.io page](https://luckyirl.itch.io/)
 
 This is a horizontal rule:
 
