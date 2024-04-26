@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://og4ax13j1jpl"
-path="res://.godot/imported/Bell4.png-c7bc0a1a10dcde591f115dcfa15e36e6.ctex"
+uid="uid://brmtwb56lhkpb"
+path="res://.godot/imported/D2.png-a70b85f0aaa199c3024f935ad6d84780.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Bell4.png"
-dest_files=["res://.godot/imported/Bell4.png-c7bc0a1a10dcde591f115dcfa15e36e6.ctex"]
+source_file="res://Sprites/Instruments/D2.png"
+dest_files=["res://.godot/imported/D2.png-a70b85f0aaa199c3024f935ad6d84780.ctex"]
 
 [params]
 

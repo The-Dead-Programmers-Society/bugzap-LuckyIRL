@@ -6,6 +6,10 @@ var recorded_bell_sounds: Array = []
 
 @onready var SFX_BUS_ID = AudioServer.get_bus_index("SFX")
 @onready var MUSIC_BUS_ID = AudioServer.get_bus_index("Music")
+@onready var BEAT1_BUS_ID = AudioServer.get_bus_index("Beat1")
+@onready var BEAT2_BUS_ID = AudioServer.get_bus_index("Beat2")
+@onready var BEAT3_BUS_ID = AudioServer.get_bus_index("Beat3")
+@onready var BEAT4_BUS_ID = AudioServer.get_bus_index("Beat4")
 @onready var menu = $Control
 
 
@@ -80,3 +84,35 @@ func _on_music_slider_value_changed(value):
 func _on_sfx_slider_value_changed(value):
 	AudioServer.set_bus_volume_db(SFX_BUS_ID, linear_to_db(value))
 	AudioServer.set_bus_mute(SFX_BUS_ID, value < .05)
+
+
+func _on_beat_1_slider_value_changed(value):
+	AudioServer.set_bus_volume_db(BEAT1_BUS_ID, linear_to_db(value))
+	AudioServer.set_bus_mute(BEAT1_BUS_ID, value < .05)
+
+
+func _on_beat_2_slider_value_changed(value):
+	AudioServer.set_bus_volume_db(BEAT2_BUS_ID, linear_to_db(value))
+	AudioServer.set_bus_mute(BEAT2_BUS_ID, value < .05)
+
+
+func _on_beat_3_slider_value_changed(value):
+	AudioServer.set_bus_volume_db(BEAT3_BUS_ID, linear_to_db(value))
+	AudioServer.set_bus_mute(BEAT3_BUS_ID, value < .05)
+
+
+func _on_beat_4_slider_value_changed(value):
+	AudioServer.set_bus_volume_db(BEAT4_BUS_ID, linear_to_db(value))
+	AudioServer.set_bus_mute(BEAT4_BUS_ID, value < .05)
+
+
+func _on_beat_track_pressed():
+	$MarginContainer2/VBoxContainer/GridContainer/BEAT1.play()
+
+
+func _on_beat_track_2_pressed():
+	$MarginContainer2/VBoxContainer/GridContainer/BEAT2.play()
+
+
+func _on_beat_track_3_pressed():
+	$MarginContainer2/VBoxContainer/GridContainer/BEAT3.play()

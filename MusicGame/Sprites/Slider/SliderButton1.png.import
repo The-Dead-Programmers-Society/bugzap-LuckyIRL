@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://drg2xhdkbb5gm"
-path="res://.godot/imported/Bell6.png-959695d7527137a908c171ecba368d9a.ctex"
+uid="uid://bic6l6ru4a6k4"
+path="res://.godot/imported/SliderButton1.png-87b3774573aad1dcf85922eb96ca3b21.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Bell6.png"
-dest_files=["res://.godot/imported/Bell6.png-959695d7527137a908c171ecba368d9a.ctex"]
+source_file="res://Sprites/Slider/SliderButton1.png"
+dest_files=["res://.godot/imported/SliderButton1.png-87b3774573aad1dcf85922eb96ca3b21.ctex"]
 
 [params]
 

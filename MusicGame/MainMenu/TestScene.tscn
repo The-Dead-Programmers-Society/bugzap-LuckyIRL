@@ -1,42 +1,52 @@
-[gd_scene load_steps=38 format=3 uid="uid://k5ymjlmc0akl"]
+[gd_scene load_steps=48 format=3 uid="uid://k5ymjlmc0akl"]
 
 [ext_resource type="Script" path="res://MainMenu/TestScene.gd" id="1_ljpw3"]
 [ext_resource type="Texture2D" uid="uid://ckanr87sjka43" path="res://Sprites/Screen.png" id="2_imyhn"]
+[ext_resource type="Texture2D" uid="uid://dl41706rwxsf2" path="res://Sprites/Bells/Bell1.png" id="3_qmnaf"]
 [ext_resource type="AudioStream" uid="uid://dmxxmopmcjol4" path="res://audio/SFX/Bell1.wav" id="3_rbxi6"]
 [ext_resource type="AudioStream" uid="uid://blhub386srghi" path="res://audio/SFX/Bell2.wav" id="4_cq6mp"]
+[ext_resource type="Texture2D" uid="uid://cmu7k8rrjwc7r" path="res://Sprites/Bells/Bell2.png" id="4_qvbnj"]
 [ext_resource type="AudioStream" uid="uid://dn8n66wg07hky" path="res://audio/SFX/Bell3.wav" id="5_g5jla"]
+[ext_resource type="Texture2D" uid="uid://5txtukphw52w" path="res://Sprites/Bells/Bell3.png" id="5_wrvlo"]
 [ext_resource type="AudioStream" uid="uid://8i6ni2nhcox0" path="res://audio/SFX/Bell4.wav" id="6_5bot6"]
+[ext_resource type="Texture2D" uid="uid://og4ax13j1jpl" path="res://Sprites/Bells/Bell4.png" id="6_f1jso"]
+[ext_resource type="Texture2D" uid="uid://8w85rdejhdsc" path="res://Sprites/Bells/Bell5.png" id="7_2k641"]
 [ext_resource type="AudioStream" uid="uid://dw4rjjsbi84h" path="res://audio/SFX/Bell5.wav" id="7_7qiw6"]
 [ext_resource type="AudioStream" uid="uid://bgpyn74kp8re" path="res://audio/SFX/Bell6.wav" id="8_0bmwk"]
+[ext_resource type="Texture2D" uid="uid://drg2xhdkbb5gm" path="res://Sprites/Bells/Bell6.png" id="8_ir2ob"]
 [ext_resource type="AudioStream" uid="uid://bm6tue5db307k" path="res://audio/SFX/Bell7.wav" id="9_1bxjc"]
+[ext_resource type="Texture2D" uid="uid://b3pjoxj1fjusi" path="res://Sprites/Bells/Bell7.png" id="9_n8fhq"]
 [ext_resource type="AudioStream" uid="uid://blmskn7grjwy7" path="res://audio/SFX/Bell8.wav" id="10_do3ea"]
+[ext_resource type="Texture2D" uid="uid://cj6lppghdir5m" path="res://Sprites/Bells/Bell8.png" id="10_jn1hl"]
+[ext_resource type="Texture2D" uid="uid://bv80wtbb6us6v" path="res://Sprites/Bells/Bell9.png" id="11_luoqx"]
 [ext_resource type="AudioStream" uid="uid://cqn2i13rraumd" path="res://audio/SFX/Bell10.wav" id="11_pdcca"]
 [ext_resource type="Script" path="res://MainMenu/PlayBackControl.gd" id="12_5onk2"]
+[ext_resource type="Texture2D" uid="uid://dqukglwdf0hyg" path="res://Sprites/Bells/Bell10.png" id="12_7uj07"]
 [ext_resource type="AudioStream" uid="uid://bk63hiddgbyfa" path="res://audio/SFX/Bell11.wav" id="12_o756q"]
 [ext_resource type="AudioStream" uid="uid://c5qqgaf3nmaia" path="res://audio/SFX/Bell12.wav" id="13_cta8u"]
+[ext_resource type="Texture2D" uid="uid://dav5h14wwxuip" path="res://Sprites/Bells/Bell11.png" id="13_q11jc"]
 [ext_resource type="AudioStream" uid="uid://47gacqywmka7" path="res://audio/SFX/Bell13.wav" id="14_ayngh"]
+[ext_resource type="Texture2D" uid="uid://7vwqrqds0jxa" path="res://Sprites/Bells/Bell12.png" id="14_txkny"]
+[ext_resource type="Texture2D" uid="uid://ddvpuen7r3c4t" path="res://Sprites/Bells/Bell13.png" id="15_63faj"]
 [ext_resource type="AudioStream" uid="uid://c0tarmw7oiff" path="res://audio/SFX/Bell14.wav" id="15_cjxi7"]
+[ext_resource type="Texture2D" uid="uid://bafvy6qvslnl7" path="res://Sprites/Bells/Bell14.png" id="16_mtemp"]
 [ext_resource type="AudioStream" uid="uid://bc0rpdo36l6yl" path="res://audio/SFX/Bell15.wav" id="16_q3p1i"]
+[ext_resource type="Texture2D" uid="uid://b40uf6i61wifl" path="res://Sprites/Bells/Bell15.png" id="17_53e63"]
 [ext_resource type="AudioStream" uid="uid://yhwnugn5pnxg" path="res://audio/SFX/Bell16.wav" id="17_uvc2u"]
-[ext_resource type="Texture2D" uid="uid://dl41706rwxsf2" path="res://Sprites/Bell1.png" id="18_rka3f"]
-[ext_resource type="Texture2D" uid="uid://cmu7k8rrjwc7r" path="res://Sprites/Bell2.png" id="19_ihe3v"]
-[ext_resource type="Texture2D" uid="uid://5txtukphw52w" path="res://Sprites/Bell3.png" id="19_yfuda"]
 [ext_resource type="Texture2D" uid="uid://bds5cdiia1kl4" path="res://Sprites/orb.png" id="20_dnk24"]
-[ext_resource type="Texture2D" uid="uid://og4ax13j1jpl" path="res://Sprites/Bell4.png" id="20_fgy4o"]
 [ext_resource type="Script" path="res://MainMenu/Orb.gd" id="21_78rgd"]
-[ext_resource type="Texture2D" uid="uid://8w85rdejhdsc" path="res://Sprites/Bell5.png" id="21_unw0q"]
-[ext_resource type="Texture2D" uid="uid://drg2xhdkbb5gm" path="res://Sprites/Bell6.png" id="22_1hxca"]
-[ext_resource type="Texture2D" uid="uid://b3pjoxj1fjusi" path="res://Sprites/Bell7.png" id="23_6mdl5"]
-[ext_resource type="Texture2D" uid="uid://cj6lppghdir5m" path="res://Sprites/Bell8.png" id="24_r6in4"]
-[ext_resource type="Texture2D" uid="uid://bv80wtbb6us6v" path="res://Sprites/Bell9.png" id="25_52r3l"]
-[ext_resource type="Texture2D" uid="uid://dqukglwdf0hyg" path="res://Sprites/Bell10.png" id="26_57qwq"]
-[ext_resource type="Texture2D" uid="uid://dav5h14wwxuip" path="res://Sprites/Bell11.png" id="27_ss8hs"]
-[ext_resource type="Texture2D" uid="uid://7vwqrqds0jxa" path="res://Sprites/Bell12.png" id="28_qvrxd"]
-[ext_resource type="Texture2D" uid="uid://ddvpuen7r3c4t" path="res://Sprites/Bell13.png" id="29_xho67"]
-[ext_resource type="Texture2D" uid="uid://bafvy6qvslnl7" path="res://Sprites/Bell14.png" id="30_yg4sf"]
-[ext_resource type="Texture2D" uid="uid://b40uf6i61wifl" path="res://Sprites/Bell15.png" id="31_i6amn"]
 [ext_resource type="Script" path="res://MainMenu/UI Control.gd" id="36_3oi5s"]
 [ext_resource type="AudioStream" uid="uid://cabcvrbl1jxsw" path="res://audio/Music/Level10.wav" id="36_ip26k"]
+[ext_resource type="Texture2D" uid="uid://bic6l6ru4a6k4" path="res://Sprites/Slider/SliderButton1.png" id="38_pp5wh"]
+[ext_resource type="Texture2D" uid="uid://citow7rgswom8" path="res://Sprites/Slider/SliderButton.png" id="38_u8k1g"]
+[ext_resource type="Texture2D" uid="uid://c0ihoyxhv2683" path="res://Sprites/Slider/SliderButton2.png" id="39_ofgnn"]
+[ext_resource type="Texture2D" uid="uid://bultvt28iycjt" path="res://Sprites/Instruments/D1.png" id="40_mgs0t"]
+[ext_resource type="Texture2D" uid="uid://brmtwb56lhkpb" path="res://Sprites/Instruments/D2.png" id="41_4xcjk"]
+[ext_resource type="Texture2D" uid="uid://dakskhs3vt3pa" path="res://Sprites/Instruments/D3.png" id="42_k7kxr"]
+[ext_resource type="Texture2D" uid="uid://cfvyn63iihier" path="res://Sprites/Instruments/D4.png" id="43_0u3cv"]
+[ext_resource type="AudioStream" uid="uid://ccjl6x7vhroue" path="res://audio/Music/BEAT1.wav" id="44_onn6f"]
+[ext_resource type="AudioStream" uid="uid://xxb1x1bpmbt1" path="res://audio/Music/BEAT2.wav" id="45_rv7uu"]
+[ext_resource type="AudioStream" uid="uid://dg615p5mcy2rb" path="res://audio/Music/BEAT3.wav" id="46_7m1p1"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -81,31 +91,31 @@ alignment = 1
 
 [node name="Button1" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
 layout_mode = 2
-texture_normal = ExtResource("18_rka3f")
+texture_normal = ExtResource("3_qmnaf")
 
 [node name="Button2" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
 layout_mode = 2
-texture_normal = ExtResource("19_ihe3v")
+texture_normal = ExtResource("4_qvbnj")
 
 [node name="Button3" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
 layout_mode = 2
-texture_normal = ExtResource("19_yfuda")
+texture_normal = ExtResource("5_wrvlo")
 
 [node name="Button4" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
 layout_mode = 2
-texture_normal = ExtResource("20_fgy4o")
+texture_normal = ExtResource("6_f1jso")
 
 [node name="Button5" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
 layout_mode = 2
-texture_normal = ExtResource("21_unw0q")
+texture_normal = ExtResource("7_2k641")
 
 [node name="Button6" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
 layout_mode = 2
-texture_normal = ExtResource("22_1hxca")
+texture_normal = ExtResource("8_ir2ob")
 
 [node name="Button7" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
 layout_mode = 2
-texture_normal = ExtResource("23_6mdl5")
+texture_normal = ExtResource("9_n8fhq")
 
 [node name="BoxContainer2" type="BoxContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
@@ -113,35 +123,35 @@ alignment = 1
 
 [node name="Button8" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer2"]
 layout_mode = 2
-texture_normal = ExtResource("24_r6in4")
+texture_normal = ExtResource("10_jn1hl")
 
 [node name="Button9" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer2"]
 layout_mode = 2
-texture_normal = ExtResource("25_52r3l")
+texture_normal = ExtResource("11_luoqx")
 
 [node name="Button10" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer2"]
 layout_mode = 2
-texture_normal = ExtResource("26_57qwq")
+texture_normal = ExtResource("12_7uj07")
 
 [node name="Button11" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer2"]
 layout_mode = 2
-texture_normal = ExtResource("27_ss8hs")
+texture_normal = ExtResource("13_q11jc")
 
 [node name="Button12" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer2"]
 layout_mode = 2
-texture_normal = ExtResource("28_qvrxd")
+texture_normal = ExtResource("14_txkny")
 
 [node name="Button13" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer2"]
 layout_mode = 2
-texture_normal = ExtResource("29_xho67")
+texture_normal = ExtResource("15_63faj")
 
 [node name="Button14" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer2"]
 layout_mode = 2
-texture_normal = ExtResource("30_yg4sf")
+texture_normal = ExtResource("16_mtemp")
 
 [node name="Button15" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer2"]
 layout_mode = 2
-texture_normal = ExtResource("31_i6amn")
+texture_normal = ExtResource("17_53e63")
 
 [node name="AudioStreamPlayer1" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_rbxi6")
@@ -234,28 +244,32 @@ text = "Play"
 [node name="PlayBackPlayer" type="AudioStreamPlayer" parent="PlayBackControl"]
 
 [node name="UI Control" type="Control" parent="."]
-anchors_preset = 0
-offset_left = -333.0
-offset_top = 44.0
-offset_right = -293.0
-offset_bottom = 84.0
+layout_mode = 1
+anchor_left = 0.655
+anchor_top = 0.529
+anchor_right = 0.97
+anchor_bottom = 0.965
+offset_left = -1087.56
+offset_top = -298.792
+offset_right = -1410.44
+offset_bottom = -541.32
 script = ExtResource("36_3oi5s")
 
 [node name="Button" type="Button" parent="UI Control"]
 layout_mode = 0
-offset_left = 352.0
-offset_top = 489.0
-offset_right = 417.0
-offset_bottom = 553.0
+offset_left = 1055.0
+offset_top = 459.0
+offset_right = 1120.0
+offset_bottom = 523.0
 text = "Synth
 "
 
 [node name="Frequency" type="VSlider" parent="UI Control"]
 layout_mode = 0
-offset_left = 460.0
-offset_top = 423.0
-offset_right = 476.0
-offset_bottom = 559.0
+offset_left = 1163.0
+offset_top = 393.0
+offset_right = 1179.0
+offset_bottom = 529.0
 
 [node name="RichTextLabel" type="RichTextLabel" parent="UI Control/Frequency"]
 modulate = Color(0.87451, 0, 0.784314, 1)
@@ -268,10 +282,10 @@ text = "Frequency"
 
 [node name="Amplitude" type="VSlider" parent="UI Control"]
 layout_mode = 0
-offset_left = 573.0
-offset_top = 422.0
-offset_right = 589.0
-offset_bottom = 558.0
+offset_left = 1276.0
+offset_top = 392.0
+offset_right = 1292.0
+offset_bottom = 528.0
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="UI Control/Amplitude"]
 modulate = Color(0.87451, 0, 0.784314, 1)
@@ -284,10 +298,10 @@ text = "Amplitude"
 
 [node name="Duration" type="VSlider" parent="UI Control"]
 layout_mode = 0
-offset_left = 685.0
-offset_top = 422.0
-offset_right = 701.0
-offset_bottom = 558.0
+offset_left = 1388.0
+offset_top = 392.0
+offset_right = 1404.0
+offset_bottom = 528.0
 
 [node name="RichTextLabel3" type="RichTextLabel" parent="UI Control/Duration"]
 modulate = Color(0.87451, 0, 0.784314, 1)
@@ -346,10 +360,12 @@ columns = 2
 layout_mode = 2
 text = "Music"
 
-[node name="MusicSlider" type="HSlider" parent="AudioBuses/MarginContainer/VBoxContainer/GridContainer"]
+[node name="Music Slider" type="HSlider" parent="AudioBuses/MarginContainer/VBoxContainer/GridContainer"]
 layout_mode = 2
-size_flags_horizontal = 3
-size_flags_vertical = 4
+theme_override_icons/grabber = ExtResource("38_u8k1g")
+theme_override_icons/grabber_highlight = ExtResource("38_pp5wh")
+theme_override_icons/grabber_disabled = ExtResource("38_u8k1g")
+theme_override_icons/tick = ExtResource("38_u8k1g")
 max_value = 1.0
 step = 0.05
 value = 1.0
@@ -362,9 +378,112 @@ text = "SFX"
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 4
+theme_override_constants/center_grabber = 0
+theme_override_constants/grabber_offset = 0
+theme_override_icons/grabber = ExtResource("38_u8k1g")
+theme_override_icons/grabber_highlight = ExtResource("38_pp5wh")
+theme_override_icons/grabber_disabled = ExtResource("38_u8k1g")
+theme_override_icons/tick = ExtResource("38_u8k1g")
 max_value = 1.0
 step = 0.05
 value = 1.0
+
+[node name="MarginContainer2" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.03
+anchor_top = 0.665
+anchor_right = 0.361
+anchor_bottom = 0.973
+offset_left = -3.56
+offset_top = 0.0799866
+offset_right = 1.12796
+offset_bottom = -57.504
+grow_vertical = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer2"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer2"]
+layout_mode = 2
+
+[node name="GridContainer" type="GridContainer" parent="MarginContainer2/VBoxContainer"]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer2/VBoxContainer/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="BeatTrack" type="TextureButton" parent="MarginContainer2/VBoxContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("40_mgs0t")
+
+[node name="Beat 1 Slider" type="HSlider" parent="MarginContainer2/VBoxContainer/GridContainer"]
+layout_mode = 2
+theme_override_icons/grabber = ExtResource("39_ofgnn")
+theme_override_icons/grabber_highlight = ExtResource("38_pp5wh")
+theme_override_icons/grabber_disabled = ExtResource("38_u8k1g")
+theme_override_icons/tick = ExtResource("39_ofgnn")
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[node name="BeatTrack2" type="TextureButton" parent="MarginContainer2/VBoxContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("41_4xcjk")
+
+[node name="Beat 2 Slider" type="HSlider" parent="MarginContainer2/VBoxContainer/GridContainer"]
+layout_mode = 2
+theme_override_icons/grabber = ExtResource("39_ofgnn")
+theme_override_icons/grabber_highlight = ExtResource("38_pp5wh")
+theme_override_icons/grabber_disabled = ExtResource("38_u8k1g")
+theme_override_icons/tick = ExtResource("39_ofgnn")
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[node name="BeatTrack3" type="TextureButton" parent="MarginContainer2/VBoxContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("42_k7kxr")
+
+[node name="Beat 3 Slider" type="HSlider" parent="MarginContainer2/VBoxContainer/GridContainer"]
+layout_mode = 2
+theme_override_icons/grabber = ExtResource("39_ofgnn")
+theme_override_icons/grabber_highlight = ExtResource("38_pp5wh")
+theme_override_icons/grabber_disabled = ExtResource("38_u8k1g")
+theme_override_icons/tick = ExtResource("39_ofgnn")
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[node name="BeatTrack4" type="TextureButton" parent="MarginContainer2/VBoxContainer/GridContainer"]
+layout_mode = 2
+texture_normal = ExtResource("43_0u3cv")
+
+[node name="Beat 4 Slider" type="HSlider" parent="MarginContainer2/VBoxContainer/GridContainer"]
+layout_mode = 2
+theme_override_icons/grabber = ExtResource("39_ofgnn")
+theme_override_icons/grabber_highlight = ExtResource("38_pp5wh")
+theme_override_icons/grabber_disabled = ExtResource("38_u8k1g")
+theme_override_icons/tick = ExtResource("39_ofgnn")
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[node name="BEAT1" type="AudioStreamPlayer" parent="MarginContainer2/VBoxContainer/GridContainer"]
+stream = ExtResource("44_onn6f")
+bus = &"Beat1"
+
+[node name="BEAT2" type="AudioStreamPlayer" parent="MarginContainer2/VBoxContainer/GridContainer"]
+stream = ExtResource("45_rv7uu")
+bus = &"Beat2"
+
+[node name="BEAT3" type="AudioStreamPlayer" parent="MarginContainer2/VBoxContainer/GridContainer"]
+stream = ExtResource("46_7m1p1")
+bus = &"Beat3"
+
+[node name="BEAT4" type="AudioStreamPlayer" parent="MarginContainer2/VBoxContainer/GridContainer"]
+bus = &"Beat4"
 
 [connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer/Button1" to="." method="_on_button_1_mouse_entered"]
 [connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer/Button2" to="." method="_on_button_2_mouse_entered"]
@@ -383,5 +502,12 @@ value = 1.0
 [connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer2/Button15" to="." method="_on_button_15_mouse_entered"]
 [connection signal="pressed" from="PlayBackControl/RecordButton" to="PlayBackControl" method="_on_record_button_pressed"]
 [connection signal="pressed" from="PlayBackControl/PlayButton" to="PlayBackControl" method="_on_play_button_pressed"]
-[connection signal="value_changed" from="AudioBuses/MarginContainer/VBoxContainer/GridContainer/MusicSlider" to="." method="_on_music_slider_value_changed"]
+[connection signal="value_changed" from="AudioBuses/MarginContainer/VBoxContainer/GridContainer/Music Slider" to="." method="_on_music_slider_value_changed"]
 [connection signal="value_changed" from="AudioBuses/MarginContainer/VBoxContainer/GridContainer/SFX Slider" to="." method="_on_sfx_slider_value_changed"]
+[connection signal="pressed" from="MarginContainer2/VBoxContainer/GridContainer/BeatTrack" to="." method="_on_beat_track_pressed"]
+[connection signal="value_changed" from="MarginContainer2/VBoxContainer/GridContainer/Beat 1 Slider" to="." method="_on_beat_1_slider_value_changed"]
+[connection signal="pressed" from="MarginContainer2/VBoxContainer/GridContainer/BeatTrack2" to="." method="_on_beat_track_2_pressed"]
+[connection signal="value_changed" from="MarginContainer2/VBoxContainer/GridContainer/Beat 2 Slider" to="." method="_on_beat_2_slider_value_changed"]
+[connection signal="pressed" from="MarginContainer2/VBoxContainer/GridContainer/BeatTrack3" to="." method="_on_beat_track_3_pressed"]
+[connection signal="value_changed" from="MarginContainer2/VBoxContainer/GridContainer/Beat 3 Slider" to="." method="_on_beat_3_slider_value_changed"]
+[connection signal="value_changed" from="MarginContainer2/VBoxContainer/GridContainer/Beat 4 Slider" to="." method="_on_beat_4_slider_value_changed"]
