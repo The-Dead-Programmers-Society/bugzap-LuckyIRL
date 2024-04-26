@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+WOW
+=======
 # Godot Music Demo
 
 Name:Peter Kelly
@@ -50,7 +53,7 @@ and sound modulation feature.
 
 This is *emphasis*
 
-*WOW I changed this using the nano command with git bash*
+*WOW*
 
 This is **strong emphasis**
 
@@ -217,3 +220,4 @@ This is a table:
 |Unity                |        *Unity*      |
 |Some stuff           |      Some Fluff     |
 
+>>>>>>> parent of 5bd1335 (I commited this using nano to edit the file and GitBash to commit it WOW)
