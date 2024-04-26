@@ -1,37 +1,35 @@
 extends Sprite2D
 
-var move_speed_range = Vector2(50.0, 150.0)
-var rotation_speed_range = Vector2(-1.0, 1.0)
-var rotation_speed = 0.5
-var direction = Vector2(1.0, 1.0)
-var button_hover_interval = 0.5
-var button_hover_timer = 0.0
+# Variables and functions to make the sprite move randomly between the 15 buttons in the 2D scene that are children 
+# of the root control node and activate the buttons once when it is on top of it with a speed variable that can be set in the editor.
 
-func _ready():
-	move_sprite()
+# The speed of the sprite
+var speed: float = 100
 
-func move_sprite():
-	position += direction * randf_range(move_speed_range.x, move_speed_range.y) * get_process_delta_time()
-	rotate(randf_range(rotation_speed_range.x, rotation_speed_range.y) * rotation_speed * get_process_delta_time())
-	clamp_position()
-	update_direction()
+# The current target button
+var target_path: NodePath
 
-func update_direction():
-	if randi() % 100 < 5:
-		direction = Vector2(randf_range(-1.0, 1.0), randf_range(-1.0, 1.0)).normalized()
-
-func clamp_position():
-	var screen_size = get_viewport_rect().size
-	position.x = clamp(position.x, 0, screen_size.x)
-	position.y = clamp(position.y, 0, screen_size.y)
-
-func _process(_delta):
-	move_sprite()
-	button_hover_timer += _delta
-	if button_hover_timer >= button_hover_interval:
-		hover_buttons()
-		button_hover_timer = 0.0
-
-func hover_buttons():
-	# Logic to trigger button hover signal
-	pass
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	# If the sprite is not moving
+	if not target_path:
+		# Get a random button
+		var button_index = randi() % 15
+		target_path = get_node("../../../ButtonContainer/Button" + str(button_index)).get_path()
+	
+	# Move towards the button
+	if target_path:
+		var target_node = get_node_or_null(target_path)
+		if target_node:
+			var target_position = target_node.global_position
+			var direction = (target_position - global_position).normalized()
+			global_position += direction * speed * delta
+	
+	# If the sprite is on top of the button
+	if target_path and global_position.distance_to(target_position) < 10:
+		# Activate the button
+		var button = target_node
+		if button:
+			button.emit_signal("pressed")
+			# Reset the target
+			target_path = null

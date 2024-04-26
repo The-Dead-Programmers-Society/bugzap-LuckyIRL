@@ -50,7 +50,7 @@ and sound modulation feature.
 
 This is *emphasis*
 
-*WOW*
+*WOW I changed this using the nano command with git bash*
 
 This is **strong emphasis**
 
