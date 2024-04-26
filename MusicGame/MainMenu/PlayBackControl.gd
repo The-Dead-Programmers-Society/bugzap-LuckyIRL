@@ -1,25 +1,25 @@
-# RecorderPlayback.gd
-
 extends Control
 
-# Array to store recorded audio data
-var recorded_bell_sounds: Array = []
+var audioEffect
+var recording
 
 func _ready():
-	# Connect the pressed signal of record and play buttons
-	$RecordButton
-	$PlayButton
+	var index = AudioServer.get_bus_index("Record")
+	audioEffect = AudioServer.get_bus_effect(index, 0)
+
+
 
 func _on_record_button_pressed():
-	# Clear any existing recorded bell sounds
-	recorded_bell_sounds.clear()
+	if audioEffect.is_recording_active():
+		recording = audioEffect.get_recording()
+		audioEffect.set_recording_active(false)
+		$RecordButton.text = "Record"
+	else:
+		audioEffect.set_recording_active(true)
+		$RecordButton.text = "Stop"
 
-	# Start recording
-	# You might implement a timer here to record for a specific duration
 
 func _on_play_button_pressed():
-	# Iterate over the recorded bell sounds and play each one
-	for audio_stream in recorded_bell_sounds:
-		var audio_stream_player = AudioStreamPlayer.new()
-		audio_stream_player.stream = audio_stream
-		audio_stream_player.play()
+	$PlayBackPlayer.stream = recording
+	$PlayBackPlayer.play()
+	recording = null

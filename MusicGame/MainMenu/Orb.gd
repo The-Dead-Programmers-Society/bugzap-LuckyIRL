@@ -32,6 +32,22 @@ func _process(_delta):
 		hover_buttons()
 		button_hover_timer = 0.0
 
+# function to trigger the mouse_entered signal of the buttons, the sprite has an area2d node as a child
 func hover_buttons():
-	# Logic to trigger button hover signal
-	pass
+	var area = get_node("Area2D")
+	var bodies = area.get_overlapping_bodies()
+	for body in bodies:
+		if body is Button:
+			body.mouse_entered()
+
+func _on_Area2D_input_event(viewport, event, shape_idx):
+			if event is InputEventMouseButton and event.pressed:
+				if event.button_index == MOUSE_BUTTON_LEFT:
+					queue_free()
+			
+
+	#The sprite moves around the screen and when it collides with a button, it triggers the mouse_entered signal of the button. The button changes its color when the mouse enters it. The sprite also has an Area2D node as a child, which is used to detect collisions with the buttons. When the left mouse button is pressed, the sprite is removed from the scene.
+
+					#The hover_buttons function is called every button_hover_interval seconds to simulate the sprite hovering over the buttons. The button_hover_timer variable is used to keep track of the time elapsed since the last hover event.
+
+

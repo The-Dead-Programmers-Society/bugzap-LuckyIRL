@@ -18,3 +18,9 @@ config/icon="res://icon.svg"
 [autoload]
 
 AudioManager="*res://sCRIPTS/AudioManager.gd"
+
+[layer_names]
+
+2d_physics/layer_1="ButtonLayer"
+2d_physics/layer_2="OrbLayer"
+2d_physics/layer_3="UI_Layer"
