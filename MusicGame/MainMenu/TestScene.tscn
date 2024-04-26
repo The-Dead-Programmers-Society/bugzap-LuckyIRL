@@ -1,40 +1,42 @@
-[gd_scene load_steps=36 format=3 uid="uid://k5ymjlmc0akl"]
+[gd_scene load_steps=38 format=3 uid="uid://k5ymjlmc0akl"]
 
 [ext_resource type="Script" path="res://MainMenu/TestScene.gd" id="1_ljpw3"]
 [ext_resource type="Texture2D" uid="uid://ckanr87sjka43" path="res://Sprites/Screen.png" id="2_imyhn"]
-[ext_resource type="AudioStream" uid="uid://dmxxmopmcjol4" path="res://audio/Bell1.wav" id="3_0g3yl"]
-[ext_resource type="AudioStream" uid="uid://blhub386srghi" path="res://audio/Bell2.wav" id="4_3fx12"]
-[ext_resource type="AudioStream" uid="uid://dn8n66wg07hky" path="res://audio/Bell3.wav" id="5_dhbd2"]
-[ext_resource type="AudioStream" uid="uid://8i6ni2nhcox0" path="res://audio/Bell4.wav" id="6_gefhv"]
-[ext_resource type="AudioStream" uid="uid://dw4rjjsbi84h" path="res://audio/Bell5.wav" id="7_f3c8t"]
-[ext_resource type="AudioStream" uid="uid://bgpyn74kp8re" path="res://audio/Bell6.wav" id="8_rocsu"]
-[ext_resource type="AudioStream" uid="uid://bm6tue5db307k" path="res://audio/Bell7.wav" id="9_ik7yv"]
-[ext_resource type="AudioStream" uid="uid://blmskn7grjwy7" path="res://audio/Bell8.wav" id="10_ux07x"]
-[ext_resource type="AudioStream" uid="uid://cqn2i13rraumd" path="res://audio/Bell10.wav" id="11_lleue"]
+[ext_resource type="AudioStream" uid="uid://dmxxmopmcjol4" path="res://audio/SFX/Bell1.wav" id="3_rbxi6"]
+[ext_resource type="AudioStream" uid="uid://blhub386srghi" path="res://audio/SFX/Bell2.wav" id="4_cq6mp"]
+[ext_resource type="AudioStream" uid="uid://dn8n66wg07hky" path="res://audio/SFX/Bell3.wav" id="5_g5jla"]
+[ext_resource type="AudioStream" uid="uid://8i6ni2nhcox0" path="res://audio/SFX/Bell4.wav" id="6_5bot6"]
+[ext_resource type="AudioStream" uid="uid://dw4rjjsbi84h" path="res://audio/SFX/Bell5.wav" id="7_7qiw6"]
+[ext_resource type="AudioStream" uid="uid://bgpyn74kp8re" path="res://audio/SFX/Bell6.wav" id="8_0bmwk"]
+[ext_resource type="AudioStream" uid="uid://bm6tue5db307k" path="res://audio/SFX/Bell7.wav" id="9_1bxjc"]
+[ext_resource type="AudioStream" uid="uid://blmskn7grjwy7" path="res://audio/SFX/Bell8.wav" id="10_do3ea"]
+[ext_resource type="AudioStream" uid="uid://cqn2i13rraumd" path="res://audio/SFX/Bell10.wav" id="11_pdcca"]
 [ext_resource type="Script" path="res://MainMenu/PlayBackControl.gd" id="12_5onk2"]
-[ext_resource type="AudioStream" uid="uid://bk63hiddgbyfa" path="res://audio/Bell11.wav" id="12_j5cjb"]
-[ext_resource type="AudioStream" uid="uid://yhwnugn5pnxg" path="res://audio/Bell16.wav" id="13_7nqdy"]
-[ext_resource type="AudioStream" uid="uid://c5qqgaf3nmaia" path="res://audio/Bell12.wav" id="13_olyj6"]
-[ext_resource type="AudioStream" uid="uid://47gacqywmka7" path="res://audio/Bell13.wav" id="14_tlocm"]
-[ext_resource type="AudioStream" uid="uid://c0tarmw7oiff" path="res://audio/Bell14.wav" id="15_f4wd3"]
-[ext_resource type="AudioStream" uid="uid://bc0rpdo36l6yl" path="res://audio/Bell15.wav" id="16_xr6ru"]
+[ext_resource type="AudioStream" uid="uid://bk63hiddgbyfa" path="res://audio/SFX/Bell11.wav" id="12_o756q"]
+[ext_resource type="AudioStream" uid="uid://c5qqgaf3nmaia" path="res://audio/SFX/Bell12.wav" id="13_cta8u"]
+[ext_resource type="AudioStream" uid="uid://47gacqywmka7" path="res://audio/SFX/Bell13.wav" id="14_ayngh"]
+[ext_resource type="AudioStream" uid="uid://c0tarmw7oiff" path="res://audio/SFX/Bell14.wav" id="15_cjxi7"]
+[ext_resource type="AudioStream" uid="uid://bc0rpdo36l6yl" path="res://audio/SFX/Bell15.wav" id="16_q3p1i"]
+[ext_resource type="AudioStream" uid="uid://yhwnugn5pnxg" path="res://audio/SFX/Bell16.wav" id="17_uvc2u"]
 [ext_resource type="Texture2D" uid="uid://dl41706rwxsf2" path="res://Sprites/Bell1.png" id="18_rka3f"]
 [ext_resource type="Texture2D" uid="uid://cmu7k8rrjwc7r" path="res://Sprites/Bell2.png" id="19_ihe3v"]
-[ext_resource type="Texture2D" uid="uid://gamalhrsc5o6" path="res://Sprites/Bell3.png" id="19_yfuda"]
+[ext_resource type="Texture2D" uid="uid://5txtukphw52w" path="res://Sprites/Bell3.png" id="19_yfuda"]
 [ext_resource type="Texture2D" uid="uid://bds5cdiia1kl4" path="res://Sprites/orb.png" id="20_dnk24"]
-[ext_resource type="Texture2D" uid="uid://c1qow7yhhscyt" path="res://Sprites/Bell4.png" id="20_fgy4o"]
+[ext_resource type="Texture2D" uid="uid://og4ax13j1jpl" path="res://Sprites/Bell4.png" id="20_fgy4o"]
 [ext_resource type="Script" path="res://MainMenu/Orb.gd" id="21_78rgd"]
-[ext_resource type="Texture2D" uid="uid://eot1w88yv58a" path="res://Sprites/Bell5.png" id="21_unw0q"]
-[ext_resource type="Texture2D" uid="uid://b0gjvfcbolukd" path="res://Sprites/Bell6.png" id="22_1hxca"]
-[ext_resource type="Texture2D" uid="uid://xqsqjax21bfk" path="res://Sprites/Bell7.png" id="23_6mdl5"]
-[ext_resource type="Texture2D" uid="uid://c2xjhrebn1w4s" path="res://Sprites/Bell8.png" id="24_r6in4"]
-[ext_resource type="Texture2D" uid="uid://b7jqjxid8pl2u" path="res://Sprites/Bell9.png" id="25_52r3l"]
-[ext_resource type="Texture2D" uid="uid://b15i50n8n22cp" path="res://Sprites/Bell10.png" id="26_57qwq"]
-[ext_resource type="Texture2D" uid="uid://cl3fh2qgntu45" path="res://Sprites/Bell11.png" id="27_ss8hs"]
-[ext_resource type="Texture2D" uid="uid://b8m1j2dbnijs6" path="res://Sprites/Bell12.png" id="28_qvrxd"]
-[ext_resource type="Texture2D" uid="uid://v8cvos4olaqw" path="res://Sprites/Bell13.png" id="29_xho67"]
-[ext_resource type="Texture2D" uid="uid://dgctckiuscqog" path="res://Sprites/Bell14.png" id="30_yg4sf"]
-[ext_resource type="Texture2D" uid="uid://c44c3lu2uuuyg" path="res://Sprites/Bell15.png" id="31_i6amn"]
+[ext_resource type="Texture2D" uid="uid://8w85rdejhdsc" path="res://Sprites/Bell5.png" id="21_unw0q"]
+[ext_resource type="Texture2D" uid="uid://drg2xhdkbb5gm" path="res://Sprites/Bell6.png" id="22_1hxca"]
+[ext_resource type="Texture2D" uid="uid://b3pjoxj1fjusi" path="res://Sprites/Bell7.png" id="23_6mdl5"]
+[ext_resource type="Texture2D" uid="uid://cj6lppghdir5m" path="res://Sprites/Bell8.png" id="24_r6in4"]
+[ext_resource type="Texture2D" uid="uid://bv80wtbb6us6v" path="res://Sprites/Bell9.png" id="25_52r3l"]
+[ext_resource type="Texture2D" uid="uid://dqukglwdf0hyg" path="res://Sprites/Bell10.png" id="26_57qwq"]
+[ext_resource type="Texture2D" uid="uid://dav5h14wwxuip" path="res://Sprites/Bell11.png" id="27_ss8hs"]
+[ext_resource type="Texture2D" uid="uid://7vwqrqds0jxa" path="res://Sprites/Bell12.png" id="28_qvrxd"]
+[ext_resource type="Texture2D" uid="uid://ddvpuen7r3c4t" path="res://Sprites/Bell13.png" id="29_xho67"]
+[ext_resource type="Texture2D" uid="uid://bafvy6qvslnl7" path="res://Sprites/Bell14.png" id="30_yg4sf"]
+[ext_resource type="Texture2D" uid="uid://b40uf6i61wifl" path="res://Sprites/Bell15.png" id="31_i6amn"]
+[ext_resource type="Script" path="res://MainMenu/UI Control.gd" id="36_3oi5s"]
+[ext_resource type="AudioStream" uid="uid://cabcvrbl1jxsw" path="res://audio/Music/Level10.wav" id="36_ip26k"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -55,258 +57,151 @@ grow_vertical = 2
 texture = ExtResource("2_imyhn")
 expand_mode = 1
 
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.327257
+anchor_top = 0.114568
+anchor_right = 0.664063
+anchor_bottom = 0.54784
+offset_left = -282.0
+offset_top = -0.24
+offset_right = 282.0
+grow_horizontal = 2
+grow_vertical = 2
+metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="BoxContainer" type="BoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Button1" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("18_rka3f")
+
+[node name="Button2" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("19_ihe3v")
+
+[node name="Button3" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("19_yfuda")
+
+[node name="Button4" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("20_fgy4o")
+
+[node name="Button5" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("21_unw0q")
+
+[node name="Button6" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("22_1hxca")
+
+[node name="Button7" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("23_6mdl5")
+
+[node name="BoxContainer2" type="BoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="Button8" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("24_r6in4")
+
+[node name="Button9" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("25_52r3l")
+
+[node name="Button10" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("26_57qwq")
+
+[node name="Button11" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("27_ss8hs")
+
+[node name="Button12" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("28_qvrxd")
+
+[node name="Button13" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("29_xho67")
+
+[node name="Button14" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("30_yg4sf")
+
+[node name="Button15" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("31_i6amn")
+
 [node name="AudioStreamPlayer1" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("3_0g3yl")
+stream = ExtResource("3_rbxi6")
+bus = &"SFX"
 
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("4_3fx12")
+stream = ExtResource("4_cq6mp")
+bus = &"SFX"
 
 [node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("5_dhbd2")
+stream = ExtResource("5_g5jla")
+bus = &"SFX"
 
 [node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("6_gefhv")
+stream = ExtResource("6_5bot6")
+bus = &"SFX"
 
 [node name="AudioStreamPlayer5" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("7_f3c8t")
+stream = ExtResource("7_7qiw6")
+bus = &"SFX"
 
 [node name="AudioStreamPlayer6" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("8_rocsu")
+stream = ExtResource("8_0bmwk")
+bus = &"SFX"
 
 [node name="AudioStreamPlayer7" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("9_ik7yv")
+stream = ExtResource("9_1bxjc")
+bus = &"SFX"
 
 [node name="AudioStreamPlayer8" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("10_ux07x")
+stream = ExtResource("10_do3ea")
+bus = &"SFX"
 
 [node name="AudioStreamPlayer9" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("11_lleue")
+stream = ExtResource("11_pdcca")
+bus = &"SFX"
 
 [node name="AudioStreamPlayer10" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("12_j5cjb")
+stream = ExtResource("12_o756q")
+bus = &"SFX"
 
 [node name="AudioStreamPlayer11" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("13_olyj6")
+stream = ExtResource("13_cta8u")
+bus = &"SFX"
 
 [node name="AudioStreamPlayer12" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("14_tlocm")
+stream = ExtResource("14_ayngh")
+bus = &"SFX"
 
 [node name="AudioStreamPlayer13" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("15_f4wd3")
+stream = ExtResource("15_cjxi7")
+bus = &"SFX"
 
 [node name="AudioStreamPlayer14" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("16_xr6ru")
+stream = ExtResource("16_q3p1i")
+bus = &"SFX"
 
 [node name="AudioStreamPlayer15" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("13_7nqdy")
-
-[node name="Button1" type="Button" parent="."]
-layout_mode = 2
-offset_left = 51.0
-offset_top = 155.0
-offset_right = 129.0
-offset_bottom = 186.0
-text = "Bell 1
-"
-
-[node name="Sprite2D" type="Sprite2D" parent="Button1"]
-position = Vector2(48, 12)
-texture = ExtResource("18_rka3f")
-
-[node name="Button2" type="Button" parent="."]
-layout_mode = 2
-offset_left = 174.0
-offset_top = 155.0
-offset_right = 252.0
-offset_bottom = 186.0
-text = "Bell 2
-"
-
-[node name="Sprite2D" type="Sprite2D" parent="Button2"]
-position = Vector2(42, 15)
-scale = Vector2(0.164063, 0.164063)
-texture = ExtResource("19_yfuda")
-
-[node name="Button3" type="Button" parent="."]
-layout_mode = 2
-offset_left = 304.0
-offset_top = 154.0
-offset_right = 382.0
-offset_bottom = 185.0
-text = "Bell 3
-"
-
-[node name="Sprite2D" type="Sprite2D" parent="Button3"]
-position = Vector2(38, 11)
-scale = Vector2(0.161133, 0.161133)
-texture = ExtResource("20_fgy4o")
-
-[node name="Button4" type="Button" parent="."]
-layout_mode = 2
-offset_left = 427.0
-offset_top = 155.0
-offset_right = 505.0
-offset_bottom = 186.0
-text = "Bell 4
-"
-
-[node name="Sprite2D" type="Sprite2D" parent="Button4"]
-position = Vector2(37, 9)
-scale = Vector2(0.19043, 0.19043)
-texture = ExtResource("21_unw0q")
-
-[node name="Button5" type="Button" parent="."]
-layout_mode = 2
-offset_left = 549.0
-offset_top = 155.0
-offset_right = 627.0
-offset_bottom = 186.0
-text = "Bell 5
-"
-
-[node name="Sprite2D" type="Sprite2D" parent="Button5"]
-position = Vector2(36.125, 13.875)
-scale = Vector2(0.16748, 0.16748)
-texture = ExtResource("22_1hxca")
-
-[node name="Button6" type="Button" parent="."]
-layout_mode = 2
-offset_left = 673.0
-offset_top = 157.0
-offset_right = 751.0
-offset_bottom = 188.0
-text = "Bell 6
-"
-
-[node name="Sprite2D" type="Sprite2D" parent="Button6"]
-position = Vector2(45, 9)
-scale = Vector2(0.196289, 0.196289)
-texture = ExtResource("23_6mdl5")
-
-[node name="Button7" type="Button" parent="."]
-layout_mode = 2
-offset_left = 792.0
-offset_top = 156.0
-offset_right = 870.0
-offset_bottom = 187.0
-text = "Bell 7
-"
-
-[node name="Sprite2D" type="Sprite2D" parent="Button7"]
-position = Vector2(39, 12)
-scale = Vector2(0.181641, 0.181641)
-texture = ExtResource("24_r6in4")
-
-[node name="Button8" type="Button" parent="."]
-layout_mode = 2
-offset_left = 911.0
-offset_top = 155.0
-offset_right = 989.0
-offset_bottom = 186.0
-text = "Bell 8
-"
-
-[node name="Sprite2D" type="Sprite2D" parent="Button8"]
-position = Vector2(37, 20)
-scale = Vector2(0.191406, 0.191406)
-texture = ExtResource("25_52r3l")
-
-[node name="Button9" type="Button" parent="."]
-layout_mode = 2
-offset_left = 1026.0
-offset_top = 153.0
-offset_right = 1104.0
-offset_bottom = 184.0
-text = "Bell 9
-"
-
-[node name="Sprite2D" type="Sprite2D" parent="Button9"]
-position = Vector2(35, 20)
-scale = Vector2(0.208984, 0.208984)
-texture = ExtResource("26_57qwq")
-
-[node name="Button10" type="Button" parent="."]
-layout_mode = 2
-offset_left = 207.0
-offset_top = 318.0
-offset_right = 285.0
-offset_bottom = 349.0
-text = "Bell 10
-"
-
-[node name="Sprite2D" type="Sprite2D" parent="Button10"]
-position = Vector2(40, 9)
-scale = Vector2(0.205078, 0.205078)
-texture = ExtResource("27_ss8hs")
-
-[node name="Button11" type="Button" parent="."]
-layout_mode = 2
-offset_left = 330.0
-offset_top = 318.0
-offset_right = 408.0
-offset_bottom = 349.0
-text = "Bell 11
-"
-
-[node name="Sprite2D" type="Sprite2D" parent="Button11"]
-position = Vector2(39, 14)
-scale = Vector2(0.229492, 0.229492)
-texture = ExtResource("28_qvrxd")
-
-[node name="Button12" type="Button" parent="."]
-layout_mode = 2
-offset_left = 460.0
-offset_top = 317.0
-offset_right = 538.0
-offset_bottom = 348.0
-text = "Bell 12
-"
-
-[node name="Sprite2D" type="Sprite2D" parent="Button12"]
-position = Vector2(37, 8)
-scale = Vector2(0.193359, 0.193359)
-texture = ExtResource("29_xho67")
-
-[node name="Button13" type="Button" parent="."]
-layout_mode = 2
-offset_left = 583.0
-offset_top = 318.0
-offset_right = 661.0
-offset_bottom = 349.0
-text = "Bell 13
-"
-
-[node name="Sprite2D" type="Sprite2D" parent="Button13"]
-position = Vector2(43, 11)
-scale = Vector2(0.22168, 0.22168)
-texture = ExtResource("30_yg4sf")
-
-[node name="Button14" type="Button" parent="."]
-layout_mode = 2
-offset_left = 705.0
-offset_top = 318.0
-offset_right = 783.0
-offset_bottom = 349.0
-text = "Bell 14
-"
-
-[node name="Sprite2D" type="Sprite2D" parent="Button14"]
-position = Vector2(45, 14)
-scale = Vector2(0.228516, 0.228516)
-texture = ExtResource("31_i6amn")
-
-[node name="Button15" type="Button" parent="."]
-layout_mode = 2
-offset_left = 829.0
-offset_top = 320.0
-offset_right = 907.0
-offset_bottom = 351.0
-text = "Bell 15
-"
-
-[node name="Sprite2D" type="Sprite2D" parent="Button15"]
-position = Vector2(36, 10)
-texture = ExtResource("19_ihe3v")
+stream = ExtResource("17_uvc2u")
+bus = &"SFX"
 
 [node name="Orb" type="Sprite2D" parent="."]
 position = Vector2(574, 550)
@@ -340,8 +235,11 @@ text = "Play"
 
 [node name="UI Control" type="Control" parent="."]
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = -333.0
+offset_top = 44.0
+offset_right = -293.0
+offset_bottom = 84.0
+script = ExtResource("36_3oi5s")
 
 [node name="Button" type="Button" parent="UI Control"]
 layout_mode = 0
@@ -403,23 +301,87 @@ text = "Duration"
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="UI Control"]
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("13_7nqdy")
+stream = ExtResource("36_ip26k")
+volume_db = -20.0
+autoplay = true
+bus = &"Music"
 
-[connection signal="mouse_entered" from="Button1" to="." method="_on_button_1_mouse_entered"]
-[connection signal="mouse_entered" from="Button2" to="." method="_on_button_2_mouse_entered"]
-[connection signal="mouse_entered" from="Button3" to="." method="_on_button_3_mouse_entered"]
-[connection signal="mouse_entered" from="Button4" to="." method="_on_button_4_mouse_entered"]
-[connection signal="mouse_entered" from="Button5" to="." method="_on_button_5_mouse_entered"]
-[connection signal="mouse_entered" from="Button6" to="." method="_on_button_6_mouse_entered"]
-[connection signal="mouse_entered" from="Button7" to="." method="_on_button_7_mouse_entered"]
-[connection signal="mouse_entered" from="Button8" to="." method="_on_button_8_mouse_entered"]
-[connection signal="mouse_entered" from="Button9" to="." method="_on_button_9_mouse_entered"]
-[connection signal="mouse_entered" from="Button10" to="." method="_on_button_10_mouse_entered"]
-[connection signal="mouse_entered" from="Button11" to="." method="_on_button_11_mouse_entered"]
-[connection signal="mouse_entered" from="Button12" to="." method="_on_button_12_mouse_entered"]
-[connection signal="mouse_entered" from="Button13" to="." method="_on_button_13_mouse_entered"]
-[connection signal="pressed" from="Button13" to="." method="_on_button_13_pressed"]
-[connection signal="mouse_entered" from="Button14" to="." method="_on_button_14_mouse_entered"]
-[connection signal="mouse_entered" from="Button15" to="." method="_on_button_15_mouse_entered"]
+[node name="AudioBuses" type="Control" parent="."]
+layout_mode = 1
+anchor_left = 0.191
+anchor_top = 0.539
+anchor_right = 0.822
+anchor_bottom = 1.0
+offset_left = 33.968
+offset_top = 2.72797
+offset_right = 34.056
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="MarginContainer" type="MarginContainer" parent="AudioBuses"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -195.5
+offset_top = -122.5
+offset_right = 64.5
+offset_bottom = 122.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="AudioBuses/MarginContainer"]
+layout_mode = 2
+alignment = 1
+
+[node name="GridContainer" type="GridContainer" parent="AudioBuses/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/h_separation = 16
+columns = 2
+
+[node name="MusicLabel" type="Label" parent="AudioBuses/MarginContainer/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "Music"
+
+[node name="MusicSlider" type="HSlider" parent="AudioBuses/MarginContainer/VBoxContainer/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[node name="SFX Label" type="Label" parent="AudioBuses/MarginContainer/VBoxContainer/GridContainer"]
+layout_mode = 2
+text = "SFX"
+
+[node name="SFX Slider" type="HSlider" parent="AudioBuses/MarginContainer/VBoxContainer/GridContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 4
+max_value = 1.0
+step = 0.05
+value = 1.0
+
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer/Button1" to="." method="_on_button_1_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer/Button2" to="." method="_on_button_2_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer/Button3" to="." method="_on_button_3_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer/Button4" to="." method="_on_button_4_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer/Button5" to="." method="_on_button_5_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer/Button6" to="." method="_on_button_6_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer/Button7" to="." method="_on_button_7_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer2/Button8" to="." method="_on_button_8_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer2/Button9" to="." method="_on_button_9_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer2/Button10" to="." method="_on_button_10_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer2/Button11" to="." method="_on_button_11_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer2/Button12" to="." method="_on_button_12_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer2/Button13" to="." method="_on_button_13_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer2/Button14" to="." method="_on_button_14_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer2/Button15" to="." method="_on_button_15_mouse_entered"]
 [connection signal="pressed" from="PlayBackControl/RecordButton" to="PlayBackControl" method="_on_record_button_pressed"]
 [connection signal="pressed" from="PlayBackControl/PlayButton" to="PlayBackControl" method="_on_play_button_pressed"]
+[connection signal="value_changed" from="AudioBuses/MarginContainer/VBoxContainer/GridContainer/MusicSlider" to="." method="_on_music_slider_value_changed"]
+[connection signal="value_changed" from="AudioBuses/MarginContainer/VBoxContainer/GridContainer/SFX Slider" to="." method="_on_sfx_slider_value_changed"]

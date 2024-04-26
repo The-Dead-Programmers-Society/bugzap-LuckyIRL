@@ -1,7 +1,17 @@
 extends Control
+class_name UI
 
 # Array to store recorded audio data
 var recorded_bell_sounds: Array = []
+
+@onready var SFX_BUS_ID = AudioServer.get_bus_index("SFX")
+@onready var MUSIC_BUS_ID = AudioServer.get_bus_index("Music")
+@onready var menu = $Control
+
+
+func  _input(event):
+	if event.is_action_pressed("ui_cancel"):
+		menu.visible = !menu.visible
 
 func _on_button_1_mouse_entered():
 	$AudioStreamPlayer1.play()
@@ -60,3 +70,13 @@ func _on_button_14_mouse_entered():
 
 func _on_button_15_mouse_entered():
 	$AudioStreamPlayer15.play()
+
+
+func _on_music_slider_value_changed(value):
+	AudioServer.set_bus_volume_db(MUSIC_BUS_ID, linear_to_db(value))
+	AudioServer.set_bus_mute(MUSIC_BUS_ID, value < .05)
+
+
+func _on_sfx_slider_value_changed(value):
+	AudioServer.set_bus_volume_db(SFX_BUS_ID, linear_to_db(value))
+	AudioServer.set_bus_mute(SFX_BUS_ID, value < .05)
