@@ -75,6 +75,65 @@ func _on_button_14_mouse_entered():
 func _on_button_15_mouse_entered():
 	$AudioStreamPlayer15.play()
 
+func _on_button_17_mouse_entered():
+	$AudioStreamPlayer17.play()
+
+
+func _on_button_16_mouse_entered():
+	$AudioStreamPlayer16.play()
+
+
+func _on_button_18_mouse_entered():
+	$AudioStreamPlayer18.play()
+
+
+func _on_button_19_mouse_entered():
+	$AudioStreamPlayer19.play()
+
+
+func _on_button_20_mouse_entered():
+	$AudioStreamPlayer20.play()
+
+
+func _on_button_21_mouse_entered():
+	$AudioStreamPlayer21.play()
+
+
+func _on_button_22_mouse_entered():
+	$AudioStreamPlayer22.play()
+
+
+func _on_button_23_mouse_entered():
+	$AudioStreamPlayer23.play()
+
+
+func _on_button_24_mouse_entered():
+	$AudioStreamPlayer24.play()
+
+
+func _on_button_25_mouse_entered():
+	$AudioStreamPlayer25.play()
+
+
+func _on_button_26_mouse_entered():
+	$AudioStreamPlayer26.play()
+
+
+func _on_button_27_mouse_entered():
+	$AudioStreamPlayer27.play()
+
+
+func _on_button_28_mouse_entered():
+	$AudioStreamPlayer28.play()
+
+
+func _on_button_29_mouse_entered():
+	$AudioStreamPlayer29.play()
+
+
+func _on_button_30_mouse_entered():
+	$AudioStreamPlayer30.play()
+
 
 func _on_music_slider_value_changed(value):
 	AudioServer.set_bus_volume_db(MUSIC_BUS_ID, linear_to_db(value))
@@ -116,3 +175,6 @@ func _on_beat_track_2_pressed():
 
 func _on_beat_track_3_pressed():
 	$MarginContainer2/VBoxContainer/GridContainer/BEAT3.play()
+
+
+

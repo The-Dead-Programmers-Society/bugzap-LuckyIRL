@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=3 uid="uid://k5ymjlmc0akl"]
+[gd_scene load_steps=65 format=3 uid="uid://k5ymjlmc0akl"]
 
 [ext_resource type="Script" path="res://MainMenu/TestScene.gd" id="1_ljpw3"]
 [ext_resource type="Texture2D" uid="uid://ckanr87sjka43" path="res://Sprites/Screen.png" id="2_imyhn"]
@@ -34,18 +34,34 @@
 [ext_resource type="Texture2D" uid="uid://b40uf6i61wifl" path="res://Sprites/Bells/Bell15.png" id="17_53e63"]
 [ext_resource type="AudioStream" uid="uid://yhwnugn5pnxg" path="res://audio/SFX/Bell16.wav" id="17_uvc2u"]
 [ext_resource type="PackedScene" uid="uid://dyxgwu3efi6rc" path="res://orb.tscn" id="33_7seiy"]
+[ext_resource type="AudioStream" uid="uid://cubu1lxesiqx5" path="res://audio/SFX/Bell17.mp3" id="33_e8aq7"]
+[ext_resource type="AudioStream" uid="uid://b83e1dafo0xrc" path="res://audio/SFX/Bell18.mp3" id="34_15nta"]
+[ext_resource type="AudioStream" uid="uid://dis0qm8c4n8xf" path="res://audio/SFX/Bell19.mp3" id="35_l7vcv"]
+[ext_resource type="AudioStream" uid="uid://bkfrrnax6gu7i" path="res://audio/SFX/Bell20.mp3" id="36_0wt0t"]
 [ext_resource type="Script" path="res://MainMenu/UI Control.gd" id="36_3oi5s"]
+[ext_resource type="AudioStream" uid="uid://de1afwxocksu1" path="res://audio/Music/Ding1.mp3" id="36_bpga3"]
 [ext_resource type="AudioStream" uid="uid://cabcvrbl1jxsw" path="res://audio/Music/Level10.wav" id="36_ip26k"]
+[ext_resource type="AudioStream" uid="uid://bbbre5ml3smwd" path="res://audio/SFX/Bell21.mp3" id="37_1fqdk"]
+[ext_resource type="AudioStream" uid="uid://cjb0ugiyi6shm" path="res://audio/SFX/Bell22.mp3" id="38_8say6"]
 [ext_resource type="Texture2D" uid="uid://bic6l6ru4a6k4" path="res://Sprites/Slider/SliderButton1.png" id="38_pp5wh"]
 [ext_resource type="Texture2D" uid="uid://citow7rgswom8" path="res://Sprites/Slider/SliderButton.png" id="38_u8k1g"]
+[ext_resource type="AudioStream" uid="uid://slw57nv7ajxi" path="res://audio/SFX/Bell23.mp3" id="39_flquj"]
 [ext_resource type="Texture2D" uid="uid://c0ihoyxhv2683" path="res://Sprites/Slider/SliderButton2.png" id="39_ofgnn"]
+[ext_resource type="AudioStream" uid="uid://cythi4o11dqvx" path="res://audio/SFX/Bell24.mp3" id="40_dk0si"]
 [ext_resource type="Texture2D" uid="uid://bultvt28iycjt" path="res://Sprites/Instruments/D1.png" id="40_mgs0t"]
 [ext_resource type="Texture2D" uid="uid://brmtwb56lhkpb" path="res://Sprites/Instruments/D2.png" id="41_4xcjk"]
 [ext_resource type="Texture2D" uid="uid://dakskhs3vt3pa" path="res://Sprites/Instruments/D3.png" id="42_k7kxr"]
+[ext_resource type="AudioStream" uid="uid://b6v4gdu1go07h" path="res://audio/Music/Ding2.mp3" id="42_wydla"]
 [ext_resource type="Texture2D" uid="uid://cfvyn63iihier" path="res://Sprites/Instruments/D4.png" id="43_0u3cv"]
+[ext_resource type="AudioStream" uid="uid://c5lp3y1ofe10u" path="res://audio/Music/Ding3.mp3" id="43_h3dws"]
+[ext_resource type="AudioStream" uid="uid://gthki3ojjf67" path="res://audio/Music/Ding4.mp3" id="44_dgdmb"]
 [ext_resource type="AudioStream" uid="uid://ccjl6x7vhroue" path="res://audio/Music/BEAT1.wav" id="44_onn6f"]
 [ext_resource type="AudioStream" uid="uid://xxb1x1bpmbt1" path="res://audio/Music/BEAT2.wav" id="45_rv7uu"]
+[ext_resource type="AudioStream" uid="uid://8pepcy6xgaim" path="res://audio/Music/Ding5.mp3" id="45_tydp3"]
 [ext_resource type="AudioStream" uid="uid://dg615p5mcy2rb" path="res://audio/Music/BEAT3.wav" id="46_7m1p1"]
+[ext_resource type="AudioStream" uid="uid://bin7lkahk23w6" path="res://audio/Music/Ding6.mp3" id="46_ahjm6"]
+[ext_resource type="AudioStream" uid="uid://07kq2dj8gemg" path="res://audio/Music/Ding7.mp3" id="47_me1iu"]
+[ext_resource type="AudioStream" uid="uid://cnp3snn25rq8b" path="res://audio/Music/Dingaling.mp3" id="48_huaag"]
 
 [sub_resource type="AudioStream" id="AudioStream_80on2"]
 
@@ -53,11 +69,13 @@
 
 [node name="Control" type="Control"]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_right = 2.131
+anchor_bottom = 2.16
+offset_right = -294.912
+offset_bottom = 40.3199
 grow_horizontal = 2
 grow_vertical = 2
+scale = Vector2(0.534305, 0.45183)
 script = ExtResource("1_ljpw3")
 
 [node name="TextureRect" type="TextureRect" parent="."]
@@ -72,87 +90,162 @@ expand_mode = 1
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 1
-anchors_preset = -1
-anchor_left = 0.327257
-anchor_top = 0.0142593
-anchor_right = 0.664063
-anchor_bottom = 0.410494
-offset_left = -282.0
-offset_top = -0.24
-offset_right = 282.0
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 552.0
+offset_top = 208.0
+offset_right = -539.0
+offset_bottom = 735.0
 grow_horizontal = 2
-grow_vertical = 2
-metadata/_edit_use_anchors_ = true
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 0
+alignment = 1
+
+[node name="BoxContainer" type="BoxContainer" parent="MarginContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+alignment = 1
+
+[node name="Button1" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("3_qmnaf")
+
+[node name="Button2" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("4_qvbnj")
+
+[node name="Button3" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("5_wrvlo")
+
+[node name="Button4" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("6_f1jso")
+
+[node name="Button5" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("7_2k641")
+
+[node name="Button6" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("8_ir2ob")
+
+[node name="Button7" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("9_n8fhq")
+
+[node name="Button8" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("10_jn1hl")
+
+[node name="Button9" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("11_luoqx")
+
+[node name="BoxContainer2" type="BoxContainer" parent="MarginContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 4
+alignment = 1
+
+[node name="Button10" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("12_7uj07")
+
+[node name="Button11" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("13_q11jc")
+
+[node name="Button12" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("14_txkny")
+
+[node name="Button13" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("15_63faj")
+
+[node name="Button14" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("16_mtemp")
+
+[node name="Button15" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("17_53e63")
+
+[node name="Button16" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("3_qmnaf")
+
+[node name="Button17" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("4_qvbnj")
+
+[node name="Button18" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("5_wrvlo")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 8
 alignment = 1
 
 [node name="BoxContainer" type="BoxContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 alignment = 1
 
-[node name="Button1" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
-layout_mode = 2
-texture_normal = ExtResource("3_qmnaf")
-
-[node name="Button2" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
-layout_mode = 2
-texture_normal = ExtResource("4_qvbnj")
-
-[node name="Button3" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
-layout_mode = 2
-texture_normal = ExtResource("5_wrvlo")
-
-[node name="Button4" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
+[node name="Button19" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
 layout_mode = 2
 texture_normal = ExtResource("6_f1jso")
 
-[node name="Button5" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
+[node name="Button20" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
 layout_mode = 2
 texture_normal = ExtResource("7_2k641")
 
-[node name="Button6" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
+[node name="Button21" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
 layout_mode = 2
 texture_normal = ExtResource("8_ir2ob")
 
-[node name="Button7" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
+[node name="Button22" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
 layout_mode = 2
 texture_normal = ExtResource("9_n8fhq")
+
+[node name="Button23" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("10_jn1hl")
+
+[node name="Button24" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("11_luoqx")
+
+[node name="Button25" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
+layout_mode = 2
+texture_normal = ExtResource("12_7uj07")
 
 [node name="BoxContainer2" type="BoxContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
 alignment = 1
 
-[node name="Button8" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer2"]
-layout_mode = 2
-texture_normal = ExtResource("10_jn1hl")
-
-[node name="Button9" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer2"]
-layout_mode = 2
-texture_normal = ExtResource("11_luoqx")
-
-[node name="Button10" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer2"]
-layout_mode = 2
-texture_normal = ExtResource("12_7uj07")
-
-[node name="Button11" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer2"]
+[node name="Button26" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer2"]
 layout_mode = 2
 texture_normal = ExtResource("13_q11jc")
 
-[node name="Button12" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer2"]
+[node name="Button27" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer2"]
 layout_mode = 2
 texture_normal = ExtResource("14_txkny")
 
-[node name="Button13" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer2"]
+[node name="Button28" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer2"]
 layout_mode = 2
 texture_normal = ExtResource("15_63faj")
 
-[node name="Button14" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer2"]
+[node name="Button29" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer2"]
 layout_mode = 2
 texture_normal = ExtResource("16_mtemp")
 
-[node name="Button15" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer2"]
+[node name="Button30" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer2"]
 layout_mode = 2
 texture_normal = ExtResource("17_53e63")
 
@@ -216,28 +309,104 @@ bus = &"SFX"
 stream = ExtResource("17_uvc2u")
 bus = &"SFX"
 
+[node name="AudioStreamPlayer16" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("33_e8aq7")
+bus = &"SFX"
+
+[node name="AudioStreamPlayer17" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("34_15nta")
+bus = &"SFX"
+
+[node name="AudioStreamPlayer18" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("35_l7vcv")
+bus = &"SFX"
+
+[node name="AudioStreamPlayer19" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("36_0wt0t")
+bus = &"SFX"
+
+[node name="AudioStreamPlayer20" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("37_1fqdk")
+bus = &"SFX"
+
+[node name="AudioStreamPlayer21" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("38_8say6")
+bus = &"SFX"
+
+[node name="AudioStreamPlayer22" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("39_flquj")
+bus = &"SFX"
+
+[node name="AudioStreamPlayer23" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("40_dk0si")
+bus = &"SFX"
+
+[node name="AudioStreamPlayer24" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("36_bpga3")
+bus = &"SFX"
+
+[node name="AudioStreamPlayer25" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("42_wydla")
+bus = &"SFX"
+
+[node name="AudioStreamPlayer26" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("43_h3dws")
+bus = &"SFX"
+
+[node name="AudioStreamPlayer27" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("44_dgdmb")
+bus = &"SFX"
+
+[node name="AudioStreamPlayer28" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("45_tydp3")
+bus = &"SFX"
+
+[node name="AudioStreamPlayer29" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("46_ahjm6")
+bus = &"SFX"
+
+[node name="AudioStreamPlayer30" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("47_me1iu")
+bus = &"SFX"
+
+[node name="AudioStreamPlayer31" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("48_huaag")
+bus = &"SFX"
+
+[node name="AudioStreamPlayer32" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("17_uvc2u")
+bus = &"SFX"
+
 [node name="Orb" parent="." instance=ExtResource("33_7seiy")]
+position = Vector2(579, 548)
 
 [node name="PlayBackControl" type="Control" parent="."]
 anchors_preset = 0
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = 805.0
+offset_top = 848.0
+offset_right = 1318.0
+offset_bottom = 1073.0
 script = ExtResource("12_5onk2")
 
 [node name="RecordButton" type="Button" parent="PlayBackControl"]
-layout_mode = 0
-offset_left = 500.0
-offset_top = 350.0
-offset_right = 572.0
-offset_bottom = 402.0
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.059
+anchor_top = 0.178
+anchor_right = 0.263
+anchor_bottom = 0.909
+offset_left = 97.4279
+offset_top = -0.54792
+offset_right = 97.2419
+offset_bottom = -2.02293
 text = "Record"
 
 [node name="PlayButton" type="Button" parent="PlayBackControl"]
 layout_mode = 0
-offset_left = 600.0
-offset_top = 350.0
-offset_right = 671.0
-offset_bottom = 402.0
+offset_left = 278.413
+offset_top = 41.7153
+offset_right = 456.413
+offset_bottom = 195.715
 text = "Play"
 
 [node name="PlayBackPlayer" type="AudioStreamPlayer" parent="PlayBackControl"]
@@ -255,27 +424,27 @@ anchor_left = 0.655
 anchor_top = 0.529
 anchor_right = 0.97
 anchor_bottom = 0.965
-offset_left = -1087.56
-offset_top = -298.792
-offset_right = -1410.44
-offset_bottom = -541.32
+offset_left = 129.2
+offset_top = 10.2401
+offset_right = -134.2
+offset_bottom = -232.6
 script = ExtResource("36_3oi5s")
 
 [node name="Button" type="Button" parent="UI Control"]
 layout_mode = 0
-offset_left = 1065.0
-offset_top = 399.0
-offset_right = 1130.0
-offset_bottom = 463.0
+offset_left = 16.906
+offset_top = 192.965
+offset_right = 81.906
+offset_bottom = 256.965
 text = "Synth
 "
 
 [node name="Frequency" type="VSlider" parent="UI Control"]
 layout_mode = 0
-offset_left = 1173.0
-offset_top = 333.0
-offset_right = 1189.0
-offset_bottom = 469.0
+offset_left = 122.973
+offset_top = 151.499
+offset_right = 138.973
+offset_bottom = 287.499
 
 [node name="RichTextLabel" type="RichTextLabel" parent="UI Control/Frequency"]
 modulate = Color(0.87451, 0, 0.784314, 1)
@@ -288,10 +457,10 @@ text = "Frequency"
 
 [node name="Amplitude" type="VSlider" parent="UI Control"]
 layout_mode = 0
-offset_left = 1286.0
-offset_top = 332.0
-offset_right = 1302.0
-offset_bottom = 468.0
+offset_left = 235.973
+offset_top = 150.499
+offset_right = 251.973
+offset_bottom = 286.499
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="UI Control/Amplitude"]
 modulate = Color(0.87451, 0, 0.784314, 1)
@@ -304,10 +473,10 @@ text = "Amplitude"
 
 [node name="Duration" type="VSlider" parent="UI Control"]
 layout_mode = 0
-offset_left = 1398.0
-offset_top = 332.0
-offset_right = 1414.0
-offset_bottom = 468.0
+offset_left = 347.973
+offset_top = 150.499
+offset_right = 363.973
+offset_bottom = 286.499
 
 [node name="RichTextLabel3" type="RichTextLabel" parent="UI Control/Duration"]
 modulate = Color(0.87451, 0, 0.784314, 1)
@@ -332,9 +501,9 @@ anchor_left = 0.191
 anchor_top = 0.539
 anchor_right = 0.822
 anchor_bottom = 1.0
-offset_left = 170.903
-offset_top = 233.728
-offset_right = -172.009
+offset_left = 170.44
+offset_top = 451.84
+offset_right = -172.52
 offset_bottom = 3.0
 grow_horizontal = 2
 grow_vertical = 0
@@ -344,7 +513,9 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_right = -4.82999
+offset_top = 45.0
+offset_right = -5.0
+offset_bottom = -40.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -396,10 +567,10 @@ anchor_left = 0.03
 anchor_top = 0.665
 anchor_right = 0.361
 anchor_bottom = 0.973
-offset_left = -3.56
-offset_top = 0.0799866
-offset_right = 1.12796
-offset_bottom = -57.504
+offset_left = -17.56
+offset_top = -100.92
+offset_right = -224.872
+offset_bottom = 7.49603
 grow_vertical = 0
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer2"]
@@ -487,21 +658,36 @@ bus = &"Beat3"
 [node name="BEAT4" type="AudioStreamPlayer" parent="MarginContainer2/VBoxContainer/GridContainer"]
 bus = &"Beat4"
 
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer/Button1" to="." method="_on_button_1_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer/Button2" to="." method="_on_button_2_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer/Button3" to="." method="_on_button_3_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer/Button4" to="." method="_on_button_4_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer/Button5" to="." method="_on_button_5_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer/Button6" to="." method="_on_button_6_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer/Button7" to="." method="_on_button_7_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer2/Button8" to="." method="_on_button_8_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer2/Button9" to="." method="_on_button_9_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer2/Button10" to="." method="_on_button_10_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer2/Button11" to="." method="_on_button_11_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer2/Button12" to="." method="_on_button_12_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer2/Button13" to="." method="_on_button_13_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer2/Button14" to="." method="_on_button_14_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer2/Button15" to="." method="_on_button_15_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer/Button1" to="." method="_on_button_1_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer/Button2" to="." method="_on_button_2_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer/Button3" to="." method="_on_button_3_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer/Button4" to="." method="_on_button_4_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer/Button5" to="." method="_on_button_5_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer/Button6" to="." method="_on_button_6_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer/Button7" to="." method="_on_button_7_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer/Button8" to="." method="_on_button_8_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer/Button9" to="." method="_on_button_9_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer2/Button10" to="." method="_on_button_10_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer2/Button11" to="." method="_on_button_11_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer2/Button12" to="." method="_on_button_12_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer2/Button13" to="." method="_on_button_13_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer2/Button14" to="." method="_on_button_14_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer2/Button15" to="." method="_on_button_15_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer2/Button16" to="." method="_on_button_16_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer2/Button17" to="." method="_on_button_17_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer2/Button18" to="." method="_on_button_18_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer/Button19" to="." method="_on_button_19_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer/Button20" to="." method="_on_button_20_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer/Button21" to="." method="_on_button_21_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer/Button22" to="." method="_on_button_22_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer/Button23" to="." method="_on_button_23_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer/Button24" to="." method="_on_button_24_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer/Button25" to="." method="_on_button_25_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer2/Button26" to="." method="_on_button_26_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer2/Button27" to="." method="_on_button_27_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer2/Button28" to="." method="_on_button_28_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer2/Button29" to="." method="_on_button_29_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer2/Button30" to="." method="_on_button_30_mouse_entered"]
 [connection signal="pressed" from="PlayBackControl/RecordButton" to="PlayBackControl" method="_on_record_button_pressed"]
 [connection signal="pressed" from="PlayBackControl/PlayButton" to="PlayBackControl" method="_on_play_button_pressed"]
 [connection signal="value_changed" from="AudioBuses/MarginContainer/VBoxContainer/GridContainer/Music Slider" to="." method="_on_music_slider_value_changed"]

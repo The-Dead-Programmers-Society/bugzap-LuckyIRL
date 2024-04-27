@@ -4,6 +4,7 @@
 [ext_resource type="Script" path="res://MainMenu/Orb.gd" id="2_ldjks"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4o7hn"]
+radius = 44.9444
 
 [node name="Orb" type="Sprite2D"]
 position = Vector2(574, 550)
@@ -16,6 +17,6 @@ collision_layer = 8
 input_pickable = false
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(-5343.41, -5119.99)
+position = Vector2(-9.30908, -9.30909)
 scale = Vector2(9.30908, 9.30908)
 shape = SubResource("CircleShape2D_4o7hn")
