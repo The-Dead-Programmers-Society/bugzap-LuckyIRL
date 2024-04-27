@@ -166,15 +166,15 @@ func _on_beat_4_slider_value_changed(value):
 
 
 func _on_beat_track_pressed():
-	$MarginContainer2/VBoxContainer/GridContainer/BEAT1.play()
+	$MarginContainer2/GridContainer/BEAT1.play()
 
 
 func _on_beat_track_2_pressed():
-	$MarginContainer2/VBoxContainer/GridContainer/BEAT2.play()
+	$MarginContainer2/GridContainer/BEAT2.play()
 
 
 func _on_beat_track_3_pressed():
-	$MarginContainer2/VBoxContainer/GridContainer/BEAT3.play()
+	$MarginContainer2/GridContainer/BEAT3.play()
 
 
 
