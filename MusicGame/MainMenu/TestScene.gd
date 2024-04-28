@@ -185,7 +185,72 @@ func _on_beat_track_3_pressed():
 
 
 
+func _on_area_2d_1_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	$AudioStreamPlayer1.play()
 
+
+func _on_area_2d_2_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	$AudioStreamPlayer2.play()
+
+
+func _on_area_2d_3_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	$AudioStreamPlayer3.play()
+
+
+func _on_area_2d_4_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	$AudioStreamPlayer4.play()
+
+
+func _on_area_2d_5_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	$AudioStreamPlayer5.play()
+
+
+func _on_area_2d_6_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	$AudioStreamPlayer6.play()
+
+
+func _on_area_2d_7_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	$AudioStreamPlayer7.play()
+
+
+func _on_area_2d_8_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	$AudioStreamPlayer8.play()
+
+
+func _on_area_2d_9_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	$AudioStreamPlayer9.play()
+
+
+func _on_area_2d_10_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	$AudioStreamPlayer10.play()
+
+
+func _on_area_2d_11_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	$AudioStreamPlayer11.play()
+
+
+func _on_area_2d_12_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	$AudioStreamPlayer12.play()
+
+
+func _on_area_2d_13_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	$AudioStreamPlayer13.play()
+
+
+func _on_area_2d_14_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	$AudioStreamPlayer14.play()
+
+
+func _on_area_2d_15_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	$AudioStreamPlayer15.play()
+
+
+func _on_area_2d_16_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	$AudioStreamPlayer16.play()
+
+
+func _on_area_2d_17_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	$AudioStreamPlayer17.play()
 
 func _on_area_2d_18_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
 	$AudioStreamPlayer18.play()
@@ -208,3 +273,34 @@ func _on_area_2d_22_area_shape_entered(area_rid, area, area_shape_index, local_s
 
 func _on_area_2d_23_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
 	$AudioStreamPlayer23.play()
+
+
+func _on_area_2d_24_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	$AudioStreamPlayer24.play()
+
+
+func _on_area_2d_25_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	$AudioStreamPlayer25.play()
+
+
+func _on_area_2d_26_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	$AudioStreamPlayer26.play()
+
+
+func _on_area_2d_27_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	$AudioStreamPlayer27.play()
+
+
+func _on_area_2d_28_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	$AudioStreamPlayer28.play()
+
+
+func _on_area_2d_29_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	$AudioStreamPlayer29.play()
+
+
+func _on_area_2d_30_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	$AudioStreamPlayer30.play()
+
+
+
