@@ -1,4 +1,4 @@
-[gd_scene load_steps=65 format=3 uid="uid://k5ymjlmc0akl"]
+[gd_scene load_steps=72 format=3 uid="uid://k5ymjlmc0akl"]
 
 [ext_resource type="Script" path="res://MainMenu/TestScene.gd" id="1_ljpw3"]
 [ext_resource type="Texture2D" uid="uid://ckanr87sjka43" path="res://Sprites/Screen.png" id="2_imyhn"]
@@ -63,6 +63,27 @@
 [ext_resource type="AudioStream" uid="uid://07kq2dj8gemg" path="res://audio/Music/Ding7.mp3" id="47_me1iu"]
 [ext_resource type="AudioStream" uid="uid://cnp3snn25rq8b" path="res://audio/Music/Dingaling.mp3" id="48_huaag"]
 
+[sub_resource type="CircleShape2D" id="CircleShape2D_ugjdf"]
+radius = 55.3148
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_fjhvi"]
+radius = 55.3148
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_v23mw"]
+radius = 56.0624
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_o1bps"]
+radius = 53.5451
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_s6jo4"]
+radius = 48.6376
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_i74jt"]
+radius = 50.5814
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ovpr3"]
+radius = 419.358
+
 [sub_resource type="AudioStream" id="AudioStream_80on2"]
 
 [sub_resource type="AudioStream" id="AudioStream_fmunp"]
@@ -104,88 +125,89 @@ size_flags_horizontal = 4
 size_flags_vertical = 0
 alignment = 1
 
-[node name="BoxContainer" type="BoxContainer" parent="MarginContainer/VBoxContainer2"]
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer2"]
 layout_mode = 2
-size_flags_horizontal = 4
-size_flags_vertical = 3
-alignment = 1
+size_flags_vertical = 10
+theme_override_constants/separation = 30
 
-[node name="Button1" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer"]
+[node name="Button1" type="TextureButton" parent="MarginContainer/VBoxContainer2/HBoxContainer"]
 layout_mode = 2
 texture_normal = ExtResource("3_qmnaf")
 
-[node name="Button2" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer"]
+[node name="Button2" type="TextureButton" parent="MarginContainer/VBoxContainer2/HBoxContainer"]
 layout_mode = 2
 texture_normal = ExtResource("4_qvbnj")
 
-[node name="Button3" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer"]
+[node name="Button3" type="TextureButton" parent="MarginContainer/VBoxContainer2/HBoxContainer"]
 layout_mode = 2
 texture_normal = ExtResource("5_wrvlo")
 
-[node name="Button4" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer"]
+[node name="Button4" type="TextureButton" parent="MarginContainer/VBoxContainer2/HBoxContainer"]
 layout_mode = 2
 texture_normal = ExtResource("6_f1jso")
 
-[node name="Button5" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer"]
+[node name="Button5" type="TextureButton" parent="MarginContainer/VBoxContainer2/HBoxContainer"]
 layout_mode = 2
 texture_normal = ExtResource("7_2k641")
 
-[node name="Button6" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer"]
+[node name="Button6" type="TextureButton" parent="MarginContainer/VBoxContainer2/HBoxContainer"]
 layout_mode = 2
 texture_normal = ExtResource("8_ir2ob")
 
-[node name="Button7" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer"]
+[node name="Button7" type="TextureButton" parent="MarginContainer/VBoxContainer2/HBoxContainer"]
 layout_mode = 2
 texture_normal = ExtResource("9_n8fhq")
 
-[node name="Button8" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer"]
+[node name="Button8" type="TextureButton" parent="MarginContainer/VBoxContainer2/HBoxContainer"]
 layout_mode = 2
 texture_normal = ExtResource("10_jn1hl")
 
-[node name="Button9" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer"]
+[node name="Button9" type="TextureButton" parent="MarginContainer/VBoxContainer2/HBoxContainer"]
 layout_mode = 2
 texture_normal = ExtResource("11_luoqx")
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer2"]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 3
+theme_override_constants/separation = 30
+
+[node name="Button10" type="TextureButton" parent="MarginContainer/VBoxContainer2/HBoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("12_7uj07")
+
+[node name="Button11" type="TextureButton" parent="MarginContainer/VBoxContainer2/HBoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("13_q11jc")
+
+[node name="Button12" type="TextureButton" parent="MarginContainer/VBoxContainer2/HBoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("14_txkny")
+
+[node name="Button13" type="TextureButton" parent="MarginContainer/VBoxContainer2/HBoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("15_63faj")
+
+[node name="Button14" type="TextureButton" parent="MarginContainer/VBoxContainer2/HBoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("16_mtemp")
+
+[node name="Button15" type="TextureButton" parent="MarginContainer/VBoxContainer2/HBoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("17_53e63")
+
+[node name="Button16" type="TextureButton" parent="MarginContainer/VBoxContainer2/HBoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("3_qmnaf")
+
+[node name="Button17" type="TextureButton" parent="MarginContainer/VBoxContainer2/HBoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("4_qvbnj")
 
 [node name="BoxContainer2" type="BoxContainer" parent="MarginContainer/VBoxContainer2"]
 layout_mode = 2
 size_flags_horizontal = 4
 alignment = 1
-
-[node name="Button10" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer2"]
-layout_mode = 2
-texture_normal = ExtResource("12_7uj07")
-
-[node name="Button11" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer2"]
-layout_mode = 2
-texture_normal = ExtResource("13_q11jc")
-
-[node name="Button12" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer2"]
-layout_mode = 2
-texture_normal = ExtResource("14_txkny")
-
-[node name="Button13" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer2"]
-layout_mode = 2
-texture_normal = ExtResource("15_63faj")
-
-[node name="Button14" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer2"]
-layout_mode = 2
-texture_normal = ExtResource("16_mtemp")
-
-[node name="Button15" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer2"]
-layout_mode = 2
-texture_normal = ExtResource("17_53e63")
-
-[node name="Button16" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer2"]
-layout_mode = 2
-texture_normal = ExtResource("3_qmnaf")
-
-[node name="Button17" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer2"]
-layout_mode = 2
-texture_normal = ExtResource("4_qvbnj")
-
-[node name="Button18" type="TextureButton" parent="MarginContainer/VBoxContainer2/BoxContainer2"]
-layout_mode = 2
-texture_normal = ExtResource("5_wrvlo")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
 layout_mode = 2
@@ -193,61 +215,103 @@ size_flags_horizontal = 4
 size_flags_vertical = 8
 alignment = 1
 
-[node name="BoxContainer" type="BoxContainer" parent="MarginContainer/VBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
 layout_mode = 2
-alignment = 1
+size_flags_horizontal = 4
+theme_override_constants/separation = 30
 
-[node name="Button19" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
-layout_mode = 2
-texture_normal = ExtResource("6_f1jso")
-
-[node name="Button20" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
-layout_mode = 2
-texture_normal = ExtResource("7_2k641")
-
-[node name="Button21" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
-layout_mode = 2
-texture_normal = ExtResource("8_ir2ob")
-
-[node name="Button22" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
-layout_mode = 2
-texture_normal = ExtResource("9_n8fhq")
-
-[node name="Button23" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
-layout_mode = 2
-texture_normal = ExtResource("10_jn1hl")
-
-[node name="Button24" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
+[node name="Button24" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 texture_normal = ExtResource("11_luoqx")
 
-[node name="Button25" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer"]
+[node name="Button25" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 texture_normal = ExtResource("12_7uj07")
 
-[node name="BoxContainer2" type="BoxContainer" parent="MarginContainer/VBoxContainer"]
-layout_mode = 2
-alignment = 1
-
-[node name="Button26" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer2"]
+[node name="Button26" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 texture_normal = ExtResource("13_q11jc")
 
-[node name="Button27" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer2"]
+[node name="Button27" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 texture_normal = ExtResource("14_txkny")
 
-[node name="Button28" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer2"]
+[node name="Button28" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 texture_normal = ExtResource("15_63faj")
 
-[node name="Button29" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer2"]
+[node name="Button29" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 texture_normal = ExtResource("16_mtemp")
 
-[node name="Button30" type="TextureButton" parent="MarginContainer/VBoxContainer/BoxContainer2"]
+[node name="Button30" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer"]
 layout_mode = 2
 texture_normal = ExtResource("17_53e63")
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+theme_override_constants/separation = 30
+
+[node name="Button18" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("5_wrvlo")
+
+[node name="Area2D18" type="Area2D" parent="MarginContainer/VBoxContainer/HBoxContainer2/Button18"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MarginContainer/VBoxContainer/HBoxContainer2/Button18/Area2D18"]
+position = Vector2(58.1633, 64.0327)
+shape = SubResource("CircleShape2D_ugjdf")
+
+[node name="Button19" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("6_f1jso")
+
+[node name="Area2D19" type="Area2D" parent="MarginContainer/VBoxContainer/HBoxContainer2/Button19"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MarginContainer/VBoxContainer/HBoxContainer2/Button19/Area2D19"]
+position = Vector2(58.4042, 64.0327)
+shape = SubResource("CircleShape2D_fjhvi")
+
+[node name="Button20" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("7_2k641")
+
+[node name="Area2D20" type="Area2D" parent="MarginContainer/VBoxContainer/HBoxContainer2/Button20"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MarginContainer/VBoxContainer/HBoxContainer2/Button20/Area2D20"]
+position = Vector2(54.9019, 64.0327)
+shape = SubResource("CircleShape2D_v23mw")
+
+[node name="Button21" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("8_ir2ob")
+
+[node name="Area2D21" type="Area2D" parent="MarginContainer/VBoxContainer/HBoxContainer2/Button21"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MarginContainer/VBoxContainer/HBoxContainer2/Button21/Area2D21"]
+position = Vector2(58.8859, 66.2459)
+shape = SubResource("CircleShape2D_o1bps")
+
+[node name="Button22" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("9_n8fhq")
+
+[node name="Area2D22" type="Area2D" parent="MarginContainer/VBoxContainer/HBoxContainer2/Button22"]
+position = Vector2(55.3836, 64.0327)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MarginContainer/VBoxContainer/HBoxContainer2/Button22/Area2D22"]
+shape = SubResource("CircleShape2D_s6jo4")
+
+[node name="Button23" type="TextureButton" parent="MarginContainer/VBoxContainer/HBoxContainer2"]
+layout_mode = 2
+texture_normal = ExtResource("10_jn1hl")
+
+[node name="Area2D23" type="Area2D" parent="MarginContainer/VBoxContainer/HBoxContainer2/Button23"]
+position = Vector2(57.4961, 66.2459)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MarginContainer/VBoxContainer/HBoxContainer2/Button23/Area2D23"]
+shape = SubResource("CircleShape2D_i74jt")
 
 [node name="AudioStreamPlayer1" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_rbxi6")
@@ -378,7 +442,14 @@ stream = ExtResource("17_uvc2u")
 bus = &"SFX"
 
 [node name="Orb" parent="." instance=ExtResource("33_7seiy")]
-position = Vector2(579, 548)
+position = Vector2(980.713, 792.333)
+
+[node name="Area2D2" type="Area2D" parent="Orb"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Orb/Area2D2"]
+position = Vector2(-0.0010634, 0)
+scale = Vector2(1, 1)
+shape = SubResource("CircleShape2D_ovpr3")
 
 [node name="PlayBackControl" type="Control" parent="."]
 anchors_preset = 0
@@ -670,36 +741,43 @@ bus = &"Beat3"
 [node name="BEAT4" type="AudioStreamPlayer" parent="MarginContainer2/GridContainer"]
 bus = &"Beat4"
 
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer/Button1" to="." method="_on_button_1_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer/Button2" to="." method="_on_button_2_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer/Button3" to="." method="_on_button_3_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer/Button4" to="." method="_on_button_4_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer/Button5" to="." method="_on_button_5_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer/Button6" to="." method="_on_button_6_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer/Button7" to="." method="_on_button_7_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer/Button8" to="." method="_on_button_8_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer/Button9" to="." method="_on_button_9_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer2/Button10" to="." method="_on_button_10_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer2/Button11" to="." method="_on_button_11_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer2/Button12" to="." method="_on_button_12_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer2/Button13" to="." method="_on_button_13_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer2/Button14" to="." method="_on_button_14_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer2/Button15" to="." method="_on_button_15_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer2/Button16" to="." method="_on_button_16_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer2/Button17" to="." method="_on_button_17_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/BoxContainer2/Button18" to="." method="_on_button_18_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer/Button19" to="." method="_on_button_19_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer/Button20" to="." method="_on_button_20_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer/Button21" to="." method="_on_button_21_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer/Button22" to="." method="_on_button_22_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer/Button23" to="." method="_on_button_23_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer/Button24" to="." method="_on_button_24_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer/Button25" to="." method="_on_button_25_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer2/Button26" to="." method="_on_button_26_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer2/Button27" to="." method="_on_button_27_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer2/Button28" to="." method="_on_button_28_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer2/Button29" to="." method="_on_button_29_mouse_entered"]
-[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/BoxContainer2/Button30" to="." method="_on_button_30_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/HBoxContainer/Button1" to="." method="_on_button_1_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/HBoxContainer/Button2" to="." method="_on_button_2_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/HBoxContainer/Button3" to="." method="_on_button_3_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/HBoxContainer/Button4" to="." method="_on_button_4_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/HBoxContainer/Button5" to="." method="_on_button_5_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/HBoxContainer/Button6" to="." method="_on_button_6_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/HBoxContainer/Button7" to="." method="_on_button_7_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/HBoxContainer/Button8" to="." method="_on_button_8_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/HBoxContainer/Button9" to="." method="_on_button_9_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/HBoxContainer2/Button10" to="." method="_on_button_10_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/HBoxContainer2/Button11" to="." method="_on_button_11_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/HBoxContainer2/Button12" to="." method="_on_button_12_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/HBoxContainer2/Button13" to="." method="_on_button_13_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/HBoxContainer2/Button14" to="." method="_on_button_14_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/HBoxContainer2/Button15" to="." method="_on_button_15_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/HBoxContainer2/Button16" to="." method="_on_button_16_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/HBoxContainer2/Button17" to="." method="_on_button_17_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/HBoxContainer/Button24" to="." method="_on_button_24_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/HBoxContainer/Button25" to="." method="_on_button_25_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/HBoxContainer/Button26" to="." method="_on_button_26_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/HBoxContainer/Button27" to="." method="_on_button_27_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/HBoxContainer/Button28" to="." method="_on_button_28_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/HBoxContainer/Button29" to="." method="_on_button_29_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/HBoxContainer/Button30" to="." method="_on_button_30_mouse_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/HBoxContainer2/Button18" to="." method="_on_button_18_mouse_entered"]
+[connection signal="area_shape_entered" from="MarginContainer/VBoxContainer/HBoxContainer2/Button18/Area2D18" to="." method="_on_area_2d_18_area_shape_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/HBoxContainer2/Button19" to="." method="_on_button_19_mouse_entered"]
+[connection signal="area_shape_entered" from="MarginContainer/VBoxContainer/HBoxContainer2/Button19/Area2D19" to="." method="_on_area_2d_19_area_shape_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/HBoxContainer2/Button20" to="." method="_on_button_20_mouse_entered"]
+[connection signal="area_shape_entered" from="MarginContainer/VBoxContainer/HBoxContainer2/Button20/Area2D20" to="." method="_on_area_2d_20_area_shape_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/HBoxContainer2/Button21" to="." method="_on_button_21_mouse_entered"]
+[connection signal="area_shape_entered" from="MarginContainer/VBoxContainer/HBoxContainer2/Button21/Area2D21" to="." method="_on_area_2d_21_area_shape_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/HBoxContainer2/Button22" to="." method="_on_button_22_mouse_entered"]
+[connection signal="area_shape_entered" from="MarginContainer/VBoxContainer/HBoxContainer2/Button22/Area2D22" to="." method="_on_area_2d_22_area_shape_entered"]
+[connection signal="mouse_entered" from="MarginContainer/VBoxContainer/HBoxContainer2/Button23" to="." method="_on_button_23_mouse_entered"]
+[connection signal="area_shape_entered" from="MarginContainer/VBoxContainer/HBoxContainer2/Button23/Area2D23" to="." method="_on_area_2d_23_area_shape_entered"]
+[connection signal="body_entered" from="Orb/Area2D2" to="Orb" method="_on_area_2d_2_body_entered"]
 [connection signal="pressed" from="PlayBackControl/RecordButton" to="PlayBackControl" method="_on_record_button_pressed"]
 [connection signal="pressed" from="PlayBackControl/PlayButton" to="PlayBackControl" method="_on_play_button_pressed"]
 [connection signal="value_changed" from="AudioBuses/MarginContainer/VBoxContainer/GridContainer/Music Slider" to="." method="_on_music_slider_value_changed"]

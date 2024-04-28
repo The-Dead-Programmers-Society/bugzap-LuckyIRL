@@ -178,3 +178,33 @@ func _on_beat_track_3_pressed():
 
 
 
+
+
+
+
+
+
+
+
+
+func _on_area_2d_18_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	$AudioStreamPlayer18.play()
+
+
+func _on_area_2d_19_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	$AudioStreamPlayer19.play()
+
+
+func _on_area_2d_20_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	$AudioStreamPlayer20.play()
+
+
+func _on_area_2d_21_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	$AudioStreamPlayer21.play()
+
+
+func _on_area_2d_22_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	$AudioStreamPlayer22.play()
+
+func _on_area_2d_23_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
+	$AudioStreamPlayer23.play()
