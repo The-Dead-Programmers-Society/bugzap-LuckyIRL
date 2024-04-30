@@ -7,8 +7,8 @@
 radius = 428.37
 
 [node name="OrbTrial" type="Sprite2D"]
-position = Vector2(543, 310)
-scale = Vector2(0.164063, 0.164063)
+position = Vector2(520, 249)
+scale = Vector2(0.119141, 0.119141)
 texture = ExtResource("1_xf4co")
 script = ExtResource("2_1ns72")
 
@@ -16,3 +16,5 @@ script = ExtResource("2_1ns72")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 shape = SubResource("CircleShape2D_qoxwb")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

@@ -17,6 +17,13 @@ func  _input(event):
 	if event.is_action_pressed("ui_cancel"):
 		menu.visible = !menu.visible
 
+
+# Function to update the speed parameter of all sprites based on the slider value
+func update_speed(new_speed: float):
+	for sprite in $Sprites.get_children():
+		if sprite is Sprite2D:
+			sprite.update_speed(new_speed)
+
 func _on_button_1_mouse_entered():
 	$AudioStreamPlayer1.play()
 
@@ -302,5 +309,4 @@ func _on_area_2d_29_area_shape_entered(area_rid, area, area_shape_index, local_s
 func _on_area_2d_30_area_shape_entered(area_rid, area, area_shape_index, local_shape_index):
 	$AudioStreamPlayer30.play()
 
-
-
+	

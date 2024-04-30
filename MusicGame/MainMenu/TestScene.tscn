@@ -1,4 +1,4 @@
-[gd_scene load_steps=96 format=3 uid="uid://k5ymjlmc0akl"]
+[gd_scene load_steps=95 format=3 uid="uid://k5ymjlmc0akl"]
 
 [ext_resource type="Script" path="res://MainMenu/TestScene.gd" id="1_ljpw3"]
 [ext_resource type="Texture2D" uid="uid://ckanr87sjka43" path="res://Sprites/Screen.png" id="2_imyhn"]
@@ -33,7 +33,6 @@
 [ext_resource type="AudioStream" uid="uid://bc0rpdo36l6yl" path="res://audio/SFX/Bell15.wav" id="16_q3p1i"]
 [ext_resource type="Texture2D" uid="uid://b40uf6i61wifl" path="res://Sprites/Bells/Bell15.png" id="17_53e63"]
 [ext_resource type="AudioStream" uid="uid://yhwnugn5pnxg" path="res://audio/SFX/Bell16.wav" id="17_uvc2u"]
-[ext_resource type="PackedScene" uid="uid://dyxgwu3efi6rc" path="res://orb.tscn" id="33_7seiy"]
 [ext_resource type="AudioStream" uid="uid://cubu1lxesiqx5" path="res://audio/SFX/Bell17.mp3" id="33_e8aq7"]
 [ext_resource type="AudioStream" uid="uid://b83e1dafo0xrc" path="res://audio/SFX/Bell18.mp3" id="34_15nta"]
 [ext_resource type="AudioStream" uid="uid://dis0qm8c4n8xf" path="res://audio/SFX/Bell19.mp3" id="35_l7vcv"]
@@ -62,6 +61,7 @@
 [ext_resource type="AudioStream" uid="uid://bin7lkahk23w6" path="res://audio/Music/Ding6.mp3" id="46_ahjm6"]
 [ext_resource type="AudioStream" uid="uid://07kq2dj8gemg" path="res://audio/Music/Ding7.mp3" id="47_me1iu"]
 [ext_resource type="AudioStream" uid="uid://cnp3snn25rq8b" path="res://audio/Music/Dingaling.mp3" id="48_huaag"]
+[ext_resource type="PackedScene" uid="uid://bf50bqc2wtd4s" path="res://Scenes/orb_trial.tscn" id="63_ng3w8"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_rwv8i"]
 radius = 46.84
@@ -152,9 +152,6 @@ radius = 48.6376
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_i74jt"]
 radius = 50.5814
-
-[sub_resource type="CircleShape2D" id="CircleShape2D_ovpr3"]
-radius = 419.358
 
 [sub_resource type="AudioStream" id="AudioStream_80on2"]
 
@@ -653,15 +650,6 @@ bus = &"SFX"
 stream = ExtResource("17_uvc2u")
 bus = &"SFX"
 
-[node name="Orb" parent="." instance=ExtResource("33_7seiy")]
-position = Vector2(980.713, 792.333)
-
-[node name="Area2D2" type="Area2D" parent="Orb"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Orb/Area2D2"]
-position = Vector2(-0.0010634, 0)
-shape = SubResource("CircleShape2D_ovpr3")
-
 [node name="PlayBackControl" type="Control" parent="."]
 anchors_preset = 0
 offset_left = 805.0
@@ -952,14 +940,51 @@ bus = &"Beat3"
 [node name="BEAT4" type="AudioStreamPlayer" parent="MarginContainer2/GridContainer"]
 bus = &"Beat4"
 
-[node name="Orb2" parent="." instance=ExtResource("33_7seiy")]
-position = Vector2(1858.49, 382.887)
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.597
+anchor_right = 0.5
+anchor_bottom = 0.597
+offset_left = -20.0
+offset_top = -89.68
+offset_right = 20.0
+offset_bottom = 129.32
+grow_horizontal = 2
+grow_vertical = 2
 
-[node name="Orb3" parent="." instance=ExtResource("33_7seiy")]
-position = Vector2(267.637, 325.344)
+[node name="Label" type="Label" parent="HBoxContainer"]
+layout_mode = 2
 
-[node name="Orb4" parent="." instance=ExtResource("33_7seiy")]
-position = Vector2(1416.79, 984.884)
+[node name="VSlider" type="VSlider" parent="HBoxContainer"]
+layout_mode = 2
+
+[node name="Sprites" type="Control" parent="."]
+layout_mode = 2
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="OrbTrial" parent="Sprites" instance=ExtResource("63_ng3w8")]
+position = Vector2(345.658, 779.254)
+scale = Vector2(0.119141, 0.119141)
+speed = 800.0
+
+[node name="OrbTrial2" parent="Sprites" instance=ExtResource("63_ng3w8")]
+position = Vector2(856.886, 859.849)
+scale = Vector2(0.119141, 0.119141)
+speed = 1500.0
+
+[node name="OrbTrial3" parent="Sprites" instance=ExtResource("63_ng3w8")]
+position = Vector2(1197.52, 709.35)
+scale = Vector2(0.119141, 0.119141)
+speed = 1000.0
+
+[node name="OrbTrial4" parent="Sprites" instance=ExtResource("63_ng3w8")]
+position = Vector2(1420.54, 296.572)
+scale = Vector2(0.119141, 0.119141)
+speed = 300.0
 
 [connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/HBoxContainer/Button1" to="." method="_on_button_1_mouse_entered"]
 [connection signal="area_shape_entered" from="MarginContainer/VBoxContainer2/HBoxContainer/Button1/Area2D1" to="." method="_on_area_2d_1_area_shape_entered"]
@@ -1021,7 +1046,6 @@ position = Vector2(1416.79, 984.884)
 [connection signal="area_shape_entered" from="MarginContainer/VBoxContainer/HBoxContainer2/Button22/Area2D22" to="." method="_on_area_2d_22_area_shape_entered"]
 [connection signal="mouse_entered" from="MarginContainer/VBoxContainer/HBoxContainer2/Button23" to="." method="_on_button_23_mouse_entered"]
 [connection signal="area_shape_entered" from="MarginContainer/VBoxContainer/HBoxContainer2/Button23/Area2D23" to="." method="_on_area_2d_23_area_shape_entered"]
-[connection signal="body_entered" from="Orb/Area2D2" to="Orb" method="_on_area_2d_2_body_entered"]
 [connection signal="pressed" from="PlayBackControl/RecordButton" to="PlayBackControl" method="_on_record_button_pressed"]
 [connection signal="pressed" from="PlayBackControl/PlayButton" to="PlayBackControl" method="_on_play_button_pressed"]
 [connection signal="value_changed" from="AudioBuses/MarginContainer/VBoxContainer/GridContainer/Music Slider" to="." method="_on_music_slider_value_changed"]
@@ -1033,3 +1057,4 @@ position = Vector2(1416.79, 984.884)
 [connection signal="pressed" from="MarginContainer2/GridContainer/HBoxContainer3/BeatTrack3" to="." method="_on_beat_track_3_pressed"]
 [connection signal="value_changed" from="MarginContainer2/GridContainer/HBoxContainer3/Beat 3 Slider" to="." method="_on_beat_3_slider_value_changed"]
 [connection signal="value_changed" from="MarginContainer2/GridContainer/HBoxContainer4/Beat 4 Slider" to="." method="_on_beat_4_slider_value_changed"]
+[connection signal="value_changed" from="HBoxContainer/VSlider" to="Sprites/OrbTrial" method="_on_v_slider_value_changed"]
