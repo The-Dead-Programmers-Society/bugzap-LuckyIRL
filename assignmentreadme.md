@@ -52,7 +52,7 @@ and sound modulation feature.
 
 **Youtube Video of the Demo**
 
-[![YouTube](https://youtu.be/nL_uuVGWrFU)]
+[![YouTube](https://upload.wikimedia.org/wikipedia/commons/5/5a/Godot_logo.svg)](https://youtu.be/nL_uuVGWrFU)
 
 ## This is how to markdown text:
 
