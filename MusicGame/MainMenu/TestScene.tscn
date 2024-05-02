@@ -968,22 +968,17 @@ offset_bottom = 40.0
 
 [node name="OrbTrial" parent="Sprites" instance=ExtResource("63_ng3w8")]
 position = Vector2(345.658, 779.254)
-scale = Vector2(0.119141, 0.119141)
-speed = 800.0
 
 [node name="OrbTrial2" parent="Sprites" instance=ExtResource("63_ng3w8")]
 position = Vector2(856.886, 859.849)
-scale = Vector2(0.119141, 0.119141)
-speed = 1500.0
+speed = 150.0
 
 [node name="OrbTrial3" parent="Sprites" instance=ExtResource("63_ng3w8")]
 position = Vector2(1197.52, 709.35)
-scale = Vector2(0.119141, 0.119141)
-speed = 1000.0
+speed = 250.0
 
 [node name="OrbTrial4" parent="Sprites" instance=ExtResource("63_ng3w8")]
 position = Vector2(1420.54, 296.572)
-scale = Vector2(0.119141, 0.119141)
 speed = 300.0
 
 [connection signal="mouse_entered" from="MarginContainer/VBoxContainer2/HBoxContainer/Button1" to="." method="_on_button_1_mouse_entered"]

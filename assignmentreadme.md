@@ -50,6 +50,10 @@ and sound modulation feature.
 
 *I will do this in the next couple of days.*
 
+**Youtube Video of the Demo**
+
+[![YouTube](https://youtu.be/nL_uuVGWrFU)]
+
 ## This is how to markdown text:
 
 This is *emphasis*
